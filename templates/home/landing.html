@@ -2,13 +2,178 @@
 {% block content %}
 
 
-    <h1>Landing Page</h1>
+        <!--===============LANDING PAGE========================Sign up section -->
 
-    {% if user.is_authenticated %}
-        <div class="basic-wrapper">
-            <h2>Welcome to the site {{user.username}}</h2>
+    <section id="signup" class="signup-section container-fluid text-center" title="love heart">
+        <div class="row justify-content-center">
+            <div class="col-12">
+
+                <!-- <h2 class="text-uppercase signup my-3">Message in a Bottle</h2>
+                <p class="signup-font">
+                    Welcome to the site!!. <br> -->
+                  
+                    
+                </p>
+            </div>
+            <div class="col-12 col-sm-3 text-center mt-3">
+                <div class="join-class">
+                    <div class="btn book-button3 " data-toggle="modal" data-target="#chooseLanguage">
+                        <a><i class="fas fa-heart" aria-hidden="true" title="Click Me"></i><span
+                                class="sr-only"></span></a>
+                                <br><span id="below_heart">Sign Up</span> <br>
+                    </div>
+                    <!-- 1. Joining a class form: Modal box-->
+                    <div class="modal fade" id="chooseLanguage" tabindex="-1" role="dialog"
+                        aria-labelledby="chooseLanguageFormHeader" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content" id="chooseLanguageBox">
+                                <!-- 1.1 Joining a classform: Header-->
+                                <div class="modal-header">
+                                    <div class="modal-title col-12 text-center" id="chooseLanguageFormHeader">
+                                        <h5 class="text-center">Sign up </h5>
+                                        <button type="button" class="close p-1" data-dismiss="modal" aria-label="close">
+                                            <span class="red-x" aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- 1.2 Joining a class: Main body -->
+                                <form class="container pt-3" id="signUpForm" action="signUpConfirm.html">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-sm-6">
+                                            <!-- 1.1.1 name input-->
+                                            <div class="form-group mb-0">
+                                                <label for="fname"></label>
+                                                <input type="text" name="name" class="form-control text-center"
+                                                    id="fname" placeholder="Name" required>
+                                            </div>
+                                             <!-- 1.1.1  last name input-->
+                                             <div class="form-group mb-0">
+                                                <label for="lname"></label>
+                                                <input type="text" name="name" class="form-control text-center"
+                                                    id="lname" placeholder="surname" required>
+                                            </div>
+                                            <!-- 1.1.2 email address input-->
+                                            <div class="form-group mb-0">
+                                                <label for="email1"></label>
+                                                <input type="email" name="email" class="form-control text-center"
+                                                    id="email1" placeholder="Email address" required>
+                                            </div>
+                                            <!-- 1.1.3 password input-->
+                                            <div class="form-group mb-0">
+                                                <label for="password1"></label>
+                                                <input type="password" class="form-control text-center" id="password1"
+                                                    placeholder="Password" required>
+                                            </div>
+                                            <!-- 1.1.3 password input-->
+                                            <div class="form-group mb-0">
+                                                <label for="password2"></label>
+                                                <input type="password" class="form-control text-center" id="password2"
+                                                    placeholder="Verify Password" required>
+                                            </div>
+
+                                            <!-- 1.1.6 legal/consent information-->
+                                            <div class="from-group mt-3">
+                                                <div class="form-legal-info">
+                                                    <small class="form-text">
+                                                        We'll never share your personal details with
+                                                        anyone else.</small>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck1"
+                                                            required>
+                                                        <label class="form-check-label" for="gridCheck1">
+                                                            <small class="form-text">
+                                                                I consent to finishmysandwich collecting my details
+                                                                through this form.</small>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 1.3 join form: join button -->
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="submit" class="btn join-button" data-dismiss="#join">
+                                            <i class="fas fa-check" aria-hidden="true" title="tick!"></i><span
+                                                class="sr-only">
+                                                Check </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- choosing language form: End-->
+                </div>
+            </div>
+
         </div>
-    {% endif %}
+    </section>
+
+     <!--=======================================================================================Footer Section-->
+
+     <footer class="container-fluid over-flow text-center" id="footerbg">
+        <div class="row">
+            <div class="col-lg-4 d-none d-sm-block d-md-none d-lg-block">
+                <p>
+                    <i class=" fas fa-phone-square-alt"></i> lorem 948 198 011  <br>
+                    <i class="fas fa-envelope mt-3"></i>finishmysandwich@blt.yum<br>
+                </p>
+
+            </div>
+            <div class="col-lg-4 ">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block d-none d-xl-block">
+                <p class="footer_para"><i class="fas fa-map-marker-alt "><br></i> Bacon <br>C/ lettuce butterway 43, <br>yummy
+                    Pamplona, Navarra </p>
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-sm-none d-md-block d-lg-none">
+                <p>
+                     <i class=" fas fa-phone-square-alt"></i> lorem 948 198 011 <br>
+                     <i class="fas fa-envelope mt-3"></i>finishmysandwich@blt.yum <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+ <!--Script-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+  
 
     
 {% endblock content %}

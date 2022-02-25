@@ -37,20 +37,41 @@ body{
 /*sign up section*/
 
 #signup{
-
   margin-top: 100px;
   color: #590c8d;
   font-size: x-large;
 
 }
 
-.fa-heart:before{
+
+
+.fa-heart{
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-size: 90px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  color: #42193d;
+  padding-top: 5px;
+
+}
+.fa-heart:hover{
+  padding-top:50px;
   font-size: 100px;
   color: #c31aad;
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 200px;
+  transform: rotate(360deg);
   
+
 }
 
 .modal-header {
+  
   background: #590c8d;
   color: #fff;
   display: -ms-flexbox;
@@ -65,9 +86,15 @@ body{
   border-top-right-radius: calc(0.3rem - 1px);
 }
 
+#signUpForm{
+  background: #c31aad;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .red-x {
   color: red;
   position: absolute;
   right: 24px;
   top: 5px;
+  border: #c31aad;
 }

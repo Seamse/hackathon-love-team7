@@ -25,14 +25,12 @@
     
     <nav class="navbar bg-color-navbar navbar-expand-sm container-fluid fixed-top ">
         <a href="index.html" class="navbar-brand nav-text-color"></a>
-        <div class="col-5 ml-auto ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="col-5 ml-auto justify-content-end ">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item nav-item-1 dropdown hvr-box-shadow-inset ">
-                    <!--nav-item d-block d-md-none-->
-                    <a href="{% url 'home' %}" class="logo-font font-weight-bold nav-link text-white mr-5 ">
-                        Bottle
-                    </a>
-                </li>
 
                 <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
                     <a href="index.html" class="nav-link nav-text-color book-button hvr-box-shadow-inset"
@@ -169,6 +167,55 @@
    
 
 
+     <!--=======================================================================================Footer Section-->
+
+     <footer class="container-fluid over-flow text-center" id="footerbg">
+        <div class="row">
+            <div class="col-lg-4 d-none d-sm-block d-md-none d-lg-block">
+                <p>
+                    <i class=" fas fa-phone-square-alt"></i> lorem 948 198 011  <br>
+                    <i class="fas fa-envelope mt-3"></i>finishmysandwich@blt.yum<br>
+                </p>
+
+            </div>
+            <div class="col-lg-4 ">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter.</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a rel="noopener" href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block d-none d-xl-block">
+                <p class="footer_para"><i class="fas fa-map-marker-alt "><br></i> Bacon <br>C/ lettuce butterway 43, <br>yummy
+                    Pamplona, Navarra </p>
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-sm-none d-md-block d-lg-none">
+                <p>
+                     <i class=" fas fa-phone-square-alt"></i> lorem 948 198 011 <br>
+                     <i class="fas fa-envelope mt-3"></i>finishmysandwich@blt.yum <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
 
 
 
@@ -181,6 +228,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

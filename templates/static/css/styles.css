@@ -106,3 +106,44 @@ body{
   top: 5px;
   border: #c31aad;
 }
+
+
+
+/*footer section*/
+
+p{
+  margin-top: 10px;
+}
+
+footer{
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:100px;
+   width:100%;
+  padding: 0 30px;
+  display: flow-root;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #fff
+}
+
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links li a i {
+  background-color: #42193d;;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20%;
+}
+
+.social-links li a i:hover {
+  background: #FFCCCC;
+  color: #c31aad;
+}

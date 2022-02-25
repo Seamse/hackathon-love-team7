@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <!--Fontawesome-->
@@ -21,7 +22,8 @@
     {% else %}
     <title>Message in a Bottle</title>
     {% endif %}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 
@@ -51,28 +53,36 @@
             <div class="col-5 ml-auto justify-content-end ">
                 <ul class="navbar-nav mr-auto">
 
-                    <a class="navbar-brand" href="{% url 'landing-home' %}" target="show_blank"><span id="logo">logo</span> </a>
+                    <a class="navbar-brand" href="{% url 'landing-home' %}" target="show_blank"><span
+                            id="logo">logo</span> </a>
 
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">
                         <a href="index.html" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
                             <i class="fas fa-info  fa-lg"></i> About</a>
                     </li>
 
                     {% if user.is_authenticated %}
 
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a href="{% url 'landing-home' %}" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
+                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">
+                        <a href="{% url 'landing-home' %}"
+                            class="nav-link nav-text-color book-button hvr-box-shadow-inset">
                             <i class="fas fa-play  fa-lg"></i>Logout</a>
                     </li>
 
                     {% else %}
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a href="{% url 'landing-home' %}" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
+                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">
+                        <a href="{% url 'landing-home' %}"
+                            class="nav-link nav-text-color book-button hvr-box-shadow-inset">
                             <i class="fas fa-play  fa-lg"></i> Sign Up</a>
                     </li>
 
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a href="{% url 'landing-home' %}" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
+                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
+                        data-target=".navbar-collapse.show">
+                        <a href="{% url 'landing-home' %}"
+                            class="nav-link nav-text-color book-button hvr-box-shadow-inset">
                             <i class="fas fa-play  fa-lg"></i> Login</a>
                     </li>
 
@@ -91,16 +101,63 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 </body>
 
-<footer>
+<footer class="container-fluid over-flow text-center" id="footerbg">
+    <div class="row">
+        <div class="col-lg-4 d-none d-sm-block d-md-none d-lg-block">
+            <p>
+                <i class=" fas fa-phone-square-alt"></i> lorem 948 198 011 <br>
+                <i class="fas fa-envelope mt-3"></i>finishmysandwich@blt.yum<br>
+            </p>
 
+        </div>
+        <div class="col-lg-4 ">
+            <ul class="list-inline social-links">
+                <li class="list-inline-item">
+                    <a rel="noopener" href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook.</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a rel="noopener" href="https://twitter.com/" target="_blank">
+                        <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter.</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a rel="noopener" href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram.</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block d-none d-xl-block">
+            <p class="footer_para"><i class="fas fa-map-marker-alt "><br></i> Bacon <br>C/ lettuce butterway 43,
+                <br>yummy
+                Pamplona, Navarra </p>
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 d-sm-none d-md-block d-lg-none">
+            <p>
+                <i class=" fas fa-phone-square-alt"></i> lorem 948 198 011 <br>
+                <i class="fas fa-envelope mt-3"></i>finishmysandwich@blt.yum <br>
+            </p>
+        </div>
+    </div>
 
 </footer>
 

@@ -10,14 +10,11 @@
     border: 0;
 }
 
-
-
 body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
     position: relative;
     width: 100%;
-
 }
 
 #row {
@@ -44,12 +41,10 @@ body {
 /* headings and logo */
 
 #logo {
-
     font-size: small;
     text-transform: uppercase;
     position: absolute;
     right: 1300px;
-
 }
 
 .message {
@@ -67,7 +62,6 @@ body {
 
 .navbar {
     background-color: #590c8d;
-
 }
 
 .nav-item {
@@ -84,7 +78,6 @@ body {
 .nav-text-color:hover {
     color: #fff;
     background-color: #c31aad;
-    ;
 }
 
 
@@ -114,7 +107,6 @@ body {
     transition: width 2s, height 2s, background-color 2s, transform 2s;
     color: #42193d;
     padding-top: 5px;
-
 }
 
 .fa-heart:hover {
@@ -125,42 +117,7 @@ body {
     width: 200px;
     height: 200px;
     transform: rotate(360deg);
-
-
 }
-
-.modal-header {
-
-    background: #590c8d;
-    color: #fff;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 1rem 1rem;
-    border-bottom: 1px solid #dee2e6;
-    border-top-left-radius: calc(0.3rem - 1px);
-    border-top-right-radius: calc(0.3rem - 1px);
-}
-
-#signUpForm {
-    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
-        linear-gradient(127deg, rgba(255, 255, 0, 0.5), rgba(0, 255, 0, 0) 70.71%),
-        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.red-x {
-    color: red;
-    position: absolute;
-    right: 24px;
-    top: 5px;
-    border: #c31aad;
-}
-
-
 
 /*footer section*/
 
@@ -180,7 +137,6 @@ footer {
     justify-content: space-between;
     border-top: 2px solid #fff
 }
-
 
 .social-links {
     margin-top: 20px;

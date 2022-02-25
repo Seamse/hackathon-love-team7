@@ -80,6 +80,14 @@ body {
     background-color: #c31aad;
 }
 
+#logo {
+    font-size: xx-large;
+    color: #FFCCCC
+}
+
+#logo:hover {
+    color: #c31aad;
+}
 
 /*sign up section*/
 

@@ -10,10 +10,12 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(0.25turn, #c31aad, #ebf8e1, #590c8d);
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
     overflow: hidden; 
   
 }
+
+/*Navbar section*/
 
 .navbar{
   background-color: #590c8d;
@@ -43,7 +45,11 @@ body{
 
 }
 
-
+#below_heart {
+  color: #42193d;
+  font-size: 30px;
+  margin-right: 10px;
+}
 
 .fa-heart{
   border-radius: 20px;
@@ -87,7 +93,9 @@ body{
 }
 
 #signUpForm{
-  background: #c31aad;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 

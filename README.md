@@ -34,17 +34,44 @@
 # UX Design
 
 ## <p id="user-stories"> User Stories</p>
+- As an user I would like to be able to access the about section of the page to understand it's purpose and how to interact with it.
+
+- As an user I would like to be able to login into the account I've previously created.
+
+- As an user I would like the website to be intuitive enough so that I don't feel like I'm lost.
+
+- As an user I would like to be able to create an account.
+
+- As an user I would like to be able to edit my Bio on my account.
+
+- As an user I would like to be able to change my account's password.
+
+- As an user I would like to be able to create my own bottled messages so other people can interact with.
+
+- As an user I would like to be able to choose which bottle i want to pick.
+
+- A an user I would like to be able to respond or not to a bottle that I have picked up.
+
+- As an user I would like to be able to send a reply to a bottle so that the creator of the message can contact me, if he/she decides to.
+
+- As an user I would like to be able to access my inbox so that i can read sent and received messages.
+
+- As an user I would like the messages in my inbox to be refreshed periodically.
+
+- As an user I would like to be able to read the bio and see the profile picture of an user that has replied to my bottled message so I can decide if I want to contact them or not.
+
+- As an user I would like to be able to contact other users who have replied to my bottles via a contact form.
 
 
-
- ## <p id="typography">Typography</p> 
-
-
-
-## <p id="color">Color</p> 
+## <p id="typography">Typography</p> 
+[Lato](https://fonts.google.com/specimen/Lato?query=lato&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom#standard-styles) and [Love Lite](https://fonts.google.com/specimen/Love+Light?query=lato&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom) fonts were used.
 
 
+## <p id="color">Colors</p> 
 
+- ![#1A5466](https://via.placeholder.com/15/1A5466/000000?text=+) `#1A5466`
+- ![#982566](https://via.placeholder.com/15/982566/000000?text=+) `#982566`
+- ![#DE9D73](https://via.placeholder.com/15/DE9D73/000000?text=+) `#DE9D73`
 
 
 </section>
@@ -77,7 +104,7 @@ Wireframes can be found [here]()
 [Github](https://www.github.com)
 - remote repository hosting platform
 
-[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) | [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | [Jquery](https://jquery.com/) | [python](https://www.python.org/) | [django](https://www.djangoproject.com/)
+[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) | [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | [Jquery](https://jquery.com/) | [Python](https://www.python.org/) | [Django](https://www.djangoproject.com/)
 
 - Languages, libraries and framework
  Used to make the site

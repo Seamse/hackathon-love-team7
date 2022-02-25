@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
+/* Initial page settings */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +11,24 @@
 }
 
 
+
 body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
     overflow: hidden;
+    position: relative;
+
+}
+
+/* headings and logo */
+
+#logo {
+
+    font-size: small;
+    text-transform: uppercase;
+    position: absolute;
+    right: 1300px;
 
 }
 
@@ -37,6 +52,9 @@ body {
 
 .nav-item {
     font-size: small;
+    text-transform: uppercase;
+    float: right;
+    margin-left: 40px;
 }
 
 .nav-text-color {

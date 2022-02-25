@@ -96,7 +96,7 @@ body {
     margin-right: 10px;
 }
 
-.fa-heart {
+.sign-up-heart {
     border-radius: 20px;
     border-style: solid;
     border-width: 1px;
@@ -109,7 +109,7 @@ body {
     padding-top: 5px;
 }
 
-.fa-heart:hover {
+.sign-up-heart:hover {
     padding-top: 50px;
     font-size: 100px;
     color: #c31aad;

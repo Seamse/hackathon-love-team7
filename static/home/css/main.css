@@ -15,11 +15,31 @@
 body {
     font-family: 'Lato', sans-serif;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
-    overflow: hidden;
     position: relative;
+    width: 100%;
 
 }
+
+#row {
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+#body-image {
+    height: 85%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
+    overflow: hidden;
+    position: absolute;
+    margin: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
 
 /* headings and logo */
 

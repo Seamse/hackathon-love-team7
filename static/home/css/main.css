@@ -25,6 +25,8 @@ body {
     font-size: 300%;
     color: #FFCCCC;
     margin-left: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 #logo:hover {
@@ -44,6 +46,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-height: 6vh;
 }
 
 .nav-item {

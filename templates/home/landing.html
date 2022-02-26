@@ -1,33 +1,36 @@
 {% extends 'home/base.html' %}
 {% block content %}
 
-<div id="row">
-    <div class="column" Id="body-image">
+<div class="landing-wrapper">
+    <div id="row">
+        <div class="column" Id="body-image">
+        </div>
     </div>
-</div>
-
-<!--===============LANDING PAGE========================Sign up heart -->
-
-<section id="signup" class="signup-section container-fluid text-center" title="love heart">
-    <div class="row justify-content-center">
-        <div class="col-12 col-sm-3 text-center mt-3">
-            <div class="join-class">
-                <div class="btn book-button3 " data-toggle="modal" data-target="#chooseLanguage">
-                    <a><i class="fas fa-heart sign-up-heart" aria-hidden="true" title="Click Me"></i><span class="sr-only"></span></a>
-                    <br><span id="below_heart">Sign Up</span> <br>
+    
+    <!--===============LANDING PAGE========================Sign up heart -->
+    
+    <section id="signup" class="signup-section container-fluid text-center" title="love heart">
+    
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-3 text-center mt-3">
+                <div class="join-class">
+                    <div class="btn book-button3 " data-toggle="modal" data-target="#chooseLanguage">
+                        <a href="{% url 'sign-up' %}"><i class="fas fa-heart sign-up-heart" aria-hidden="true" title="Click Me"></i><span class="sr-only"></span></a>
+                        <br><span id="below_heart">Sign Up</span> <br>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
+    
+</div>
 
 <!--Script-->
-
+<!-- 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
+ -->
 
 
 

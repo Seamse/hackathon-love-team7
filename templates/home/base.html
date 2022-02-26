@@ -49,7 +49,7 @@
 
                     <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
                         data-target=".navbar-collapse.show">
-                        <a href="index.html" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
+                        <a href="#" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
                             <i class="fas fa-info  fa-lg"></i> About</a>
                     </li>
 
@@ -57,7 +57,7 @@
 
                     <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
                         data-target=".navbar-collapse.show">
-                        <a href="{% url 'landing-home' %}"
+                        <a href="{% url 'logout' %}"
                             class="nav-link nav-text-color book-button hvr-box-shadow-inset">
                             <i class="fas fa-play  fa-lg"></i>Logout</a>
                     </li>
@@ -65,14 +65,14 @@
                     {% else %}
                     <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
                         data-target=".navbar-collapse.show">
-                        <a href="{% url 'landing-home' %}"
+                        <a href="{% url 'sign-up' %}"
                             class="nav-link nav-text-color book-button hvr-box-shadow-inset">
                             <i class="fas fa-play  fa-lg"></i> Sign Up</a>
                     </li>
 
                     <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
                         data-target=".navbar-collapse.show">
-                        <a href="{% url 'landing-home' %}"
+                        <a href="{% url 'login' %}"
                             class="nav-link nav-text-color book-button hvr-box-shadow-inset">
                             <i class="fas fa-play  fa-lg"></i> Login</a>
                     </li>

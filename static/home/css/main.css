@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
@@ -7,17 +7,50 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
-}
-
-a {
-    text-decoration: none !important;
+    border: none;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-   
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+/* headings and logo */
+
+#logo {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 300%;
+    color: #FFCCCC;
+    margin-left: 2rem;
+}
+
+#logo:hover {
+    color: #c31aad;
+}
+
+.basic-wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 5em auto;
+}
+
+/*Navbar section*/
+
+header {
+    background-color: #590c8d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+/* landing page */
 
 .landing-wrapper {
     height: 100vh;
@@ -45,58 +78,6 @@ body {
     padding-left: 0%;
 }
 
-
-/* headings and logo */
-
-#logo {
-    font-size: small;
-    text-transform: uppercase;
-    position: absolute;
-    right: 1300px;
-}
-
-.message {
-    font-family: 'Love Light', cursive;
-    font-size: 64px;
-}
-
-.basic-wrapper {
-    width: 90%;
-    max-width: 600px;
-    margin: 5em auto;
-}
-
-/*Navbar section*/
-
-.navbar {
-    background-color: #590c8d;
-}
-
-.nav-item {
-    font-size: small;
-    text-transform: uppercase;
-    float: right;
-    margin-left: 40px;
-}
-
-.nav-text-color {
-    color: #c31aad;
-}
-
-.nav-text-color:hover {
-    color: #fff;
-    background-color: #c31aad;
-}
-
-#logo {
-    font-size: xx-large;
-    color: #FFCCCC
-}
-
-#logo:hover {
-    color: #c31aad;
-}
-
 /*sign up section*/
 
 #signup {
@@ -112,7 +93,7 @@ body {
     margin-right: 10px;
 }
 
-.sign-up-heart {
+.fa-heart {
     border-radius: 20px;
     border-style: solid;
     border-width: 1px;
@@ -125,7 +106,7 @@ body {
     padding-top: 5px;
 }
 
-.sign-up-heart:hover {
+.fa-heart:hover {
     padding-top: 50px;
     font-size: 100px;
     color: #c31aad;

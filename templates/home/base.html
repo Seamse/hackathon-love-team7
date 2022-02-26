@@ -33,54 +33,31 @@
 
         <!-- Logo and Top Navigation Menu: Added a custom style to the navigation-->
 
-        <nav class="navbar bg-color-navbar navbar-expand-sm container-fluid fixed-top ">
+        <a class="navbar-brand" href="{% url 'landing-home' %}" target="show_blank">
+            <h1 id="logo">Message in a bottle</h1>
+        </a>
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item mr-2"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item mr-2"><a class="nav-link" href="#">Go Fish</a></li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item mr-2"><a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item mr-2"><a class="nav-link" href="{% url 'login' %}">Login</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </nav>
+            
 
-            <a href="index.html" class="navbar-brand nav-text-color"></a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="col-5 ml-auto justify-content-end ">
-                <a class="navbar-brand" href="{% url 'landing-home' %}" target="show_blank"><span
-                    id="logo">Message in a bottle</span> </a>
-                
-                <ul class="navbar-nav mr-auto">
-
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
-                        data-target=".navbar-collapse.show">
-                        <a href="#" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
-                            <i class="fas fa-info  fa-lg"></i> About</a>
-                    </li>
-
-                    {% if user.is_authenticated %}
-
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
-                        data-target=".navbar-collapse.show">
-                        <a href="{% url 'logout' %}"
-                            class="nav-link nav-text-color book-button hvr-box-shadow-inset">
-                            <i class="fas fa-play  fa-lg"></i>Logout</a>
-                    </li>
-
-                    {% else %}
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
-                        data-target=".navbar-collapse.show">
-                        <a href="{% url 'sign-up' %}"
-                            class="nav-link nav-text-color book-button hvr-box-shadow-inset">
-                            <i class="fas fa-play  fa-lg"></i> Sign Up</a>
-                    </li>
-
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse"
-                        data-target=".navbar-collapse.show">
-                        <a href="{% url 'login' %}"
-                            class="nav-link nav-text-color book-button hvr-box-shadow-inset">
-                            <i class="fas fa-play  fa-lg"></i> Login</a>
-                    </li>
-
-                    {% endif %}
-                </ul>
-            </div>
-        </nav>
     </header>
     {% if messages %}
     {% for message in messages %}

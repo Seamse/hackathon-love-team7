@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
@@ -7,23 +7,64 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: none;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.landing-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* headings and logo */
 
 a {
     text-decoration: none !important;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-    
+#logo {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 300%;
+    color: #FFCCCC;
+    margin-left: 3rem;
+    position: relative;
 }
 
-.landing-wrapper {
-    height: 100vh;
-    position: relative;
-    width: 100%;
+#logo:hover {
+    color: #c31aad;
 }
+
+.basic-wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 5em auto;
+}
+
+/*Navbar section*/
+
+header {
+    background-color: #590c8d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    margin-right: 3rem;
+}
+
+.nav-item {
+    text-transform: uppercase;
+}
+
+/* landing page */
 
 #row {
     --bs-gutter-y: 0;
@@ -35,84 +76,33 @@ body {
 }
 
 #body-image {
-    height: 85%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
-    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg") no-repeat center center;
+    background-size: cover;
     position: absolute;
-    margin: 0%;
-    padding-right: 0%;
-    padding-left: 0%;
 }
 
+/*sign up heart*/
 
-/* headings and logo */
-
-#logo {
-    font-size: small;
-    text-transform: uppercase;
-    position: absolute;
-    right: 1300px;
-}
-
-.message {
-    font-family: 'Love Light', cursive;
-    font-size: 64px;
-}
-
-.basic-wrapper {
-    width: 90%;
-    max-width: 600px;
-    margin: 5em auto;
-}
-
-/*Navbar section*/
-
-.navbar {
+#about-btn{
     background-color: #590c8d;
 }
 
-.nav-item {
-    font-size: small;
-    text-transform: uppercase;
-    float: right;
-    margin-left: 40px;
-}
-
-.nav-text-color {
-    color: #c31aad;
-}
-
-.nav-text-color:hover {
-    color: #fff;
-    background-color: #c31aad;
-}
-
-#logo {
-    font-size: xx-large;
-    color: #FFCCCC
-}
-
-#logo:hover {
-    color: #c31aad;
-}
-
-/*sign up section*/
-
 #signup {
-    margin-top: 100px;
+    margin-top: 15em;
     color: #590c8d;
     font-size: x-large;
-
 }
 
 #below_heart {
     color: #42193d;
     font-size: 30px;
+    font-weight: 600;
     margin-right: 10px;
 }
 
-.sign-up-heart {
+.fa-heart {
     border-radius: 20px;
     border-style: solid;
     border-width: 1px;
@@ -125,7 +115,7 @@ body {
     padding-top: 5px;
 }
 
-.sign-up-heart:hover {
+.fa-heart:hover {
     padding-top: 50px;
     font-size: 100px;
     color: #c31aad;
@@ -137,21 +127,8 @@ body {
 
 /*footer section*/
 
-footer p {
-    margin-top: 10px;
-}
-
 footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 100px;
-    width: 100%;
-    padding: 0 30px;
-    display: flow-root;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 2px solid #fff
+    position: relative;
 }
 
 .social-links {
@@ -160,7 +137,6 @@ footer {
 
 .social-links li a i {
     background-color: #42193d;
-    ;
     height: 50px;
     width: 50px;
     color: #fff;
@@ -172,4 +148,121 @@ footer {
 .social-links li a i:hover {
     background: #FFCCCC;
     color: #c31aad;
+}
+
+input.input-box{
+width:75%;
+}
+
+textarea.input-box.input-lg{
+    width:75%;
+    }
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+    /*Modal Content*/
+.modal-div {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-body{
+    color:#42193d;
+    background-color: #ffcccc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.modal h2{
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 4.5em;
+    color: #ffcccc;
+}
+
+
+    /*Add Animation*/
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+    /*Close Button*/
+.close {
+  color: #ffcccc;
+  float: right;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #c31aad;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #42193d;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+    /* Media Queries */
+
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #about-btn{
+        margin-left: -60px;
+    }
+    .modal h2{
+        font-size: 3.5em;
+    }
+    .modal-div {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    #signup {
+        margin-top: 12em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #logo {
+        font-size: 250%;
+    }
 }

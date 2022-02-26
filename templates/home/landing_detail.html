@@ -13,7 +13,7 @@
 <div class="container">
     <div class="row g-0">
         <h1 class="post-title">{{ letter.body }}</h1>
-        <i class= "fas fa-heart">
+   
         <p class="post-subtitle">{{ letter.author }} | {{ letter.created_on }}</p>
     </div>
 
@@ -29,11 +29,10 @@
                     <br>
                     <span class=" text-muted font-weight-normal">
                         {{ reply.name }}
-                        {{ reply.created_on }}
-                        
+                        {{ reply.created_on }
+                        <a href="{% url 'contact' letter.slug %}" class="card-links mr-1" aria-label="contact user">DM</a>
                     </span> 
                 </p>
-                
             </div>
             {% endfor %}
         </div>

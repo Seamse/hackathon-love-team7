@@ -1,30 +1,61 @@
 {% extends 'home/base.html' %}
 {% block content %}
 
-<div class="landing-wrapper">
-    <div id="row">
-        <div class="column" Id="body-image">
-        </div>
+<!--===============LANDING PAGE========================Background -->
+
+<div id="row">
+    <div class="column" Id="body-image">
     </div>
-    
-    <!--===============LANDING PAGE========================Sign up heart -->
-    
-    <section id="signup" class="signup-section container-fluid text-center" title="love heart">
-    
+
+
+<!--===============LANDING PAGE========================Sign up heart -->
+
+    <section id="signup" class="container-fluid text-center" title="love heart">
+
         <div class="row justify-content-center">
             <div class="col-12 col-sm-3 text-center mt-3">
                 <div class="join-class">
-                    <div class="btn book-button3 " data-toggle="modal" data-target="#chooseLanguage">
-                        <a href="{% url 'sign-up' %}"><i class="fas fa-heart sign-up-heart" aria-hidden="true" title="Click Me"></i><span class="sr-only"></span></a>
+                    <div class="btn book-button3">
+                        <a href="{% url 'sign-up' %}"><i class="fas fa-heart" aria-hidden="true"
+                                title="Click Me"></i><span class="sr-only"></span></a>
                         <br><span id="below_heart">Sign Up</span> <br>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-    
+
 </div>
+
+<!--===============LANDING PAGE========================Footer -->
+
+<footer class="container-fluid over-flow text-center" id="footerbg">
+    <div class="row">
+        <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block">
+            <ul class="list-inline social-links">
+                <li class="list-inline-item">
+                    <a rel="noopener" href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook.</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a rel="noopener" href="https://twitter.com/" target="_blank">
+                        <i class="fab fa-twitter-square" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter.</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a rel="noopener" href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram.</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
 
 <!--Script-->
 <!-- 

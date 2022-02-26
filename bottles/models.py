@@ -37,6 +37,7 @@ class Reply(models.Model):
     letter = models.ForeignKey(Letter, on_delete=models.CASCADE,
                                related_name="replys")
     name = models.CharField(max_length=80)
+    email = models.EmailField(max_length=254, unique=True)
     body = models.CharField(max_length=100, unique=True)
     created_on = models.DateTimeField(auto_now_add=True)
     likes = models.ManyToManyField(

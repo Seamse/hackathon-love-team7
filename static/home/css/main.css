@@ -22,6 +22,10 @@ body {
 
 /* headings and logo */
 
+a {
+    text-decoration: none !important;
+}
+
 #logo {
     font-family: 'Lovers Quarrel', cursive;
     font-size: 300%;

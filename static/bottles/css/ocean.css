@@ -1,0 +1,126 @@
+
+.ocean{
+    height: 100vh;
+    background:  url("../img/ocean_main.jpg") no-repeat center;
+    background-size: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.letter-modal {
+   position: relative;
+   padding: 0; margin: 0;
+   left: 30%; top: 300px;
+   padding: 1em;
+}
+
+.bottle {
+    background: url('../img/bottle.svg') no-repeat center;
+    width: 70px; height: 70px;
+    position: absolute;
+    animation: appear ease-in;
+    animation-duration: 8s;
+    opacity: 0;
+    cursor: pointer;
+    color: red;
+}
+
+.bottle-a:nth-child(1) {
+    right: 35%; top: 70%;
+    animation-delay: 2s;
+}
+
+
+.bottle-a:nth-child(3) {
+    right: 65%; top: 75%;
+    animation-delay: 4s;
+
+}
+
+.bottle-a:nth-child(5) {
+    right: 15%; top: 84%;
+    animation-delay: 6s;
+}
+
+.bottle-a:nth-child(7) {
+    right: 20%; top: 92%;
+    animation-delay: 8s;
+
+}
+
+.bottle-a:nth-child(9) {
+    right: 88%; top: 71%;
+    animation-delay: 10s;
+
+}
+
+.bottle-b:nth-child(1) {
+    right: 25%; top: 82%;
+    animation-delay: 12s;
+}
+
+
+.bottle-b:nth-child(3) {
+    right: 68%; top: 70%;
+    animation-delay: 14s;
+
+}
+
+.bottle-b:nth-child(5) {
+    right: 28%; top: 81%;
+    animation-delay: 16s;
+}
+
+.bottle-b:nth-child(7) {
+    right: 20%; top: 92%;
+    animation-delay: 18s;
+
+}
+
+.bottle-b:nth-child(9) {
+    right: 9%; top: 83%;
+    animation-delay: 20s;
+
+}
+
+.bottle-c:nth-child(1) {
+    right: 36%; top: 79%;
+    animation-delay: 22s;
+}
+
+
+.bottle-c:nth-child(3) {
+    right: 65%; top: 76%;
+    animation-delay: 24s;
+
+}
+
+.bottle-c:nth-child(5) {
+    right: 52%; top: 84%;
+    animation-delay: 26s;
+}
+
+.bottle-c:nth-child(7) {
+    right: 20%; top: 92%;
+    animation-delay: 28s;
+
+}
+
+.bottle-c:nth-child(9) {
+    right: 88%; top: 81%;
+    animation-delay: 30s;
+}
+
+@keyframes appear {
+    0% {opacity: 0; }
+
+    5% {opacity: 1;}
+
+    50% {opacity: 1;}
+
+    95% {opacity: 1;}
+
+    100% {opacity: 0; }
+}

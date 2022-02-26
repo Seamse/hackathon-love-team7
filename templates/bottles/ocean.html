@@ -1,0 +1,72 @@
+{% extends 'home/base.html' %}
+{% block content %}
+
+<section class="ocean">
+
+    <div class="bottle-wrapper group-a">
+        {% for letter in group_a %}
+            <div class="bottle bottle-a">A</div>
+            <div class="letter-modal hidden basic-wrapper">
+                <div class="modal-wrapper">
+                    <p>{{letter.author}}</p>
+                    <p>{{letter.body}}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="bottle-wrapper group-b">
+        {% for letter in group_b %}
+            <div class="bottle bottle-b">B</div>
+            <div class="letter-modal hidden basic-wrapper">
+                <p>{{letter.author}}</p>
+                <p>{{letter.body}}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="bottle-wrapper group-c">
+        {% for letter in group_c %}
+            <div class="bottle bottle-c">C</div>
+            <div class="letter-modal hidden basic-wrapper">
+                <p>{{letter.author}}</p>
+                <p>{{letter.body}}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+<!-- <div class="basic-wrapper">
+    <h1>Group A</h1>
+    {% for letter in group_a %}
+        <div class="bottle"></div>
+        <div class="letter-modal basic-wrapper">
+            <p>{{letter.author}}</p>
+            <p>{{letter.body}}</p>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="basic-wrapper">
+    <h1>Group B</h1>
+            {% for letter in group_b %}
+                <p>{{letter.author}}</p>
+                <p>{{letter.body}}</p>
+
+            {% endfor %}
+</div>
+
+<div class="basic-wrapper">
+    <h1>Group C</h1>
+            {% for letter in group_c %}
+                <p>{{letter.author}}</p>
+                <p>{{letter.body}}</p>
+
+            {% endfor %}
+</div> -->
+
+        
+
+        
+
+{% endblock content %}
+

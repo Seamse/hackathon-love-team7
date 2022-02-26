@@ -42,16 +42,14 @@
 
         <nav class="navbar bg-color-navbar navbar-expand-sm container-fluid fixed-top ">
 
-            <a href="index.html" class="navbar-brand nav-text-color"></a>
+            <a href="index.html" class="navbar-brand nav-text-color">💓 Message in 🍾</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="col-5 ml-auto justify-content-end ">
+            <div class="col-sm-6 col-md-8 col-lg-3 ml-auto justify-content-end ">
                 <ul class="navbar-nav mr-auto">
-
-                    <a class="navbar-brand" href="{% url 'landing-home' %}" target="show_blank"><span id="logo">logo</span> </a>
 
                     <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a href="index.html" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
@@ -66,10 +64,6 @@
                     </li>
 
                     {% else %}
-                    <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a href="{% url 'landing-home' %}" class="nav-link nav-text-color book-button hvr-box-shadow-inset">
-                            <i class="fas fa-play  fa-lg"></i> Sign Up</a>
-                    </li>
 
                     <li class="nav-item mr-2 col-md-3 col-sm-4" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a href="{% url 'landing-home' %}" class="nav-link nav-text-color book-button hvr-box-shadow-inset">

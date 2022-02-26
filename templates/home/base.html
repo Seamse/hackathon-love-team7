@@ -42,7 +42,27 @@
                 <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <button id="about-btn" class="nav-item nav-link">About</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-div">
+                          <div class="modal-header">
+                            <h2>Message in a bottle</h2>
+                            <span class="close">&times;</span>
+                          </div>
+                          <div class="modal-body">
+                            <p>Message in a bottle is an ocean of potential where you can met kindred spirits or fish for that special someone!
+                                Add your own bottled messages to our vast ocean or fish to your heart's content for other people's secret thoughts.<br>
+                                Sign up today!<br>
+                                * Sign up and create a profile with us<br>
+                                * Fish for bottles in the ocean<br>
+                                * Respond to messages that appeal to you<br>
+                                * If the recipient likes your reply they can now contact you directly<br>
+                                * Write secret half messages for your own bottles<br>
+                                * Add them to our ocean and see who replies to and finishes your message<br>
+                                * A received reply offers you the option to contact them directly</p>
+                          </div>
+                        </div>
+                      </div>
                     <li class="nav-item"><a class="nav-link" href="#">Go Fish</a></li>
                     {% if user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a>
@@ -78,6 +98,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="static/script/script.js"></script>
 </body>
 
 </html>

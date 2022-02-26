@@ -177,4 +177,5 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 
 # Credits <p id="credits"></p>
 
+- [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 - Images were taken from [Pexels.com](https://www.pexels.com)

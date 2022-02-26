@@ -1,8 +1,10 @@
 from django.urls import path
-from .views import ocean
+from . import views
 
 urlpatterns = [
-
-    path('', ocean, name='bottles-home'),
-   
+    path('', views.LetterList.as_view(), name='letter_list'),
+    path('<slug:slug>/', views.LetterDetail.as_view(), name='letter_detail'),
+    path('ocean', views.ocean, name='bottles-home'),
 ]
+
+

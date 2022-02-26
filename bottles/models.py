@@ -35,7 +35,7 @@ class Reply(models.Model):
     A class for the Reply model
     """
     letter = models.ForeignKey(Letter, on_delete=models.CASCADE,
-                               related_name="reply")
+                               related_name="replys")
     name = models.CharField(max_length=80)
     body = models.CharField(max_length=100, unique=True)
     created_on = models.DateTimeField(auto_now_add=True)

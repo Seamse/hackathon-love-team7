@@ -2,17 +2,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
+/* Initial page settings */
 
-
-body{
-    font-family: 'Lato', sans-serif;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
-    overflow: hidden; 
-  
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.message{
+a {
+    text-decoration: none !important;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+   
+}
+
+.landing-wrapper {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#row {
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+#body-image {
+    height: 85%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
+    overflow: hidden;
+    position: absolute;
+    margin: 0%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+
+/* headings and logo */
+
+#logo {
+    font-size: small;
+    text-transform: uppercase;
+    position: absolute;
+    right: 1300px;
+}
+
+.message {
     font-family: 'Love Light', cursive;
     font-size: 64px;
 }
@@ -25,133 +68,108 @@ body{
 
 /*Navbar section*/
 
-.navbar{
-  background-color: #590c8d;
-  
+.navbar {
+    background-color: #590c8d;
 }
 
 .nav-item {
-  font-size: small;
+    font-size: small;
+    text-transform: uppercase;
+    float: right;
+    margin-left: 40px;
 }
 
-.nav-text-color{
-  color: #c31aad;
+.nav-text-color {
+    color: #c31aad;
 }
 
-.nav-text-color:hover{
-  color: #fff;
-  background-color:#c31aad; ;
+.nav-text-color:hover {
+    color: #fff;
+    background-color: #c31aad;
 }
 
+#logo {
+    font-size: xx-large;
+    color: #FFCCCC
+}
+
+#logo:hover {
+    color: #c31aad;
+}
 
 /*sign up section*/
 
-#signup{
-  margin-top: 100px;
-  color: #590c8d;
-  font-size: x-large;
+#signup {
+    margin-top: 100px;
+    color: #590c8d;
+    font-size: x-large;
 
 }
 
 #below_heart {
-  color: #42193d;
-  font-size: 30px;
-  margin-right: 10px;
+    color: #42193d;
+    font-size: 30px;
+    margin-right: 10px;
 }
 
-.fa-heart{
-  border-radius: 20px;
-  border-style: solid;
-  border-width: 1px;
-  display: block;
-  width: 100px;
-  height: 100px;
-  font-size: 90px;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-  color: #42193d;
-  padding-top: 5px;
-
-}
-.fa-heart:hover{
-  padding-top:50px;
-  font-size: 100px;
-  color: #c31aad;
-  background-color: #FFCCCC;
-  width: 200px;
-  height: 200px;
-  transform: rotate(360deg);
-  
-
+.sign-up-heart {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    color: #42193d;
+    padding-top: 5px;
 }
 
-.modal-header {
-  
-  background: #590c8d;
-  color: #fff;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px);
+.sign-up-heart:hover {
+    padding-top: 50px;
+    font-size: 100px;
+    color: #c31aad;
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    transform: rotate(360deg);
 }
-
-#signUpForm{
-  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(255, 255, 0, 0.5), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.red-x {
-  color: red;
-  position: absolute;
-  right: 24px;
-  top: 5px;
-  border: #c31aad;
-}
-
-
 
 /*footer section*/
 
-p{
-  margin-top: 10px;
+footer p {
+    margin-top: 10px;
 }
 
-footer{
-  position:fixed;
-   left:0px;
-   bottom:0px;
-   height:100px;
-   width:100%;
-  padding: 0 30px;
-  display: flow-root;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 2px solid #fff
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    padding: 0 30px;
+    display: flow-root;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff
 }
-
 
 .social-links {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .social-links li a i {
-  background-color: #42193d;;
-  height: 50px;
-  width: 50px;
-  color: #fff;
-  font-size: 30px;
-  padding: 10px;
-  border-radius: 20%;
+    background-color: #42193d;
+    ;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20%;
 }
 
 .social-links li a i:hover {
-  background: #FFCCCC;
-  color: #c31aad;
+    background: #FFCCCC;
+    color: #c31aad;
 }

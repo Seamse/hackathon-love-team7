@@ -13,9 +13,11 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* headings and logo */
@@ -24,9 +26,8 @@ body {
     font-family: 'Lovers Quarrel', cursive;
     font-size: 300%;
     color: #FFCCCC;
-    margin-left: 2rem;
+    margin-left: 3rem;
     position: relative;
-    z-index: 1;
 }
 
 #logo:hover {
@@ -46,7 +47,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-height: 6vh;
+}
+
+nav {
+    margin-right: 3rem;
 }
 
 .nav-item {
@@ -54,12 +58,6 @@ header {
 }
 
 /* landing page */
-
-.landing-wrapper {
-    height: 100vh;
-    position: relative;
-    width: 100%;
-}
 
 #row {
     --bs-gutter-y: 0;
@@ -71,28 +69,25 @@ header {
 }
 
 #body-image {
-    height: 85%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg");
-    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/heart1.jpg") no-repeat center center;
+    background-size: cover;
     position: absolute;
-    margin: 0%;
-    padding-right: 0%;
-    padding-left: 0%;
 }
 
-/*sign up section*/
+/*sign up heart*/
 
 #signup {
-    margin-top: 100px;
+    margin-top: 15em;
     color: #590c8d;
     font-size: x-large;
-
 }
 
 #below_heart {
     color: #42193d;
     font-size: 30px;
+    font-weight: 600;
     margin-right: 10px;
 }
 
@@ -121,21 +116,8 @@ header {
 
 /*footer section*/
 
-footer p {
-    margin-top: 10px;
-}
-
 footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 100px;
-    width: 100%;
-    padding: 0 30px;
-    display: flow-root;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 2px solid #fff
+    position: relative;
 }
 
 .social-links {
@@ -144,7 +126,6 @@ footer {
 
 .social-links li a i {
     background-color: #42193d;
-    ;
     height: 50px;
     width: 50px;
     color: #fff;
@@ -156,4 +137,20 @@ footer {
 .social-links li a i:hover {
     background: #FFCCCC;
     color: #c31aad;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    #logo {
+        font-size: 250%;
+    }
 }

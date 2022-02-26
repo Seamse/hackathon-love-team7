@@ -36,25 +36,25 @@
         <a class="navbar-brand" href="{% url 'landing-home' %}" target="show_blank">
             <h1 id="logo">Message in a bottle</h1>
         </a>
-        <nav class="navbar navbar-dark navbar-expand-sm">
+        <nav class="navbar navbar-dark navbar-expand-md">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item mr-2"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item mr-2"><a class="nav-link" href="#">Go Fish</a></li>
-                        {% if user.is_authenticated %}
-                        <li class="nav-item mr-2"><a class="nav-link" href="{% url 'logout' %}">Logout</a>
-                        </li>
-                        {% else %}
-                        <li class="nav-item mr-2"><a class="nav-link" href="{% url 'login' %}">Login</a>
-                        </li>
-                        {% endif %}
-                    </ul>
-                </div>
-            </nav>
-            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Go Fish</a></li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
 
 
 
@@ -82,14 +82,7 @@
 
 <footer class="container-fluid over-flow text-center" id="footerbg">
     <div class="row">
-        <div class="col-lg-4 d-none d-sm-block d-md-none d-lg-block">
-            <p>
-                <i class=" fas fa-phone-square-alt"></i> lorem 948 198 011 <br>
-                <i class="fas fa-envelope mt-3"></i>finishmysandwich@blt.yum<br>
-            </p>
-
-        </div>
-        <div class="col-lg-4 ">
+        <div class="col-lg-4 d-none d-sm-none d-md-none d-lg-block">
             <ul class="list-inline social-links">
                 <li class="list-inline-item">
                     <a rel="noopener" href="https://www.facebook.com/" target="_blank">
@@ -110,20 +103,6 @@
                     </a>
                 </li>
             </ul>
-        </div>
-        <div class="col-lg-4 d-none d-lg-block d-none d-xl-block">
-            <p class="footer_para"><i class="fas fa-map-marker-alt "><br></i> Bacon <br>C/ lettuce butterway 43,
-                <br>yummy
-                Pamplona, Navarra </p>
-            <br />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 d-sm-none d-md-block d-lg-none">
-            <p>
-                <i class=" fas fa-phone-square-alt"></i> lorem 948 198 011 <br>
-                <i class="fas fa-envelope mt-3"></i>finishmysandwich@blt.yum <br>
-            </p>
         </div>
     </div>
 

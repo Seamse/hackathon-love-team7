@@ -5,9 +5,11 @@ from django.contrib import messages
 from .forms import UserRegisterForm
 
 # Create your views here.
+
 def landing(request):
     """ docstring """
     return render(request, 'home/landing.html')
+      
 
 def sign_up(request):
     """ docstring """

@@ -13,6 +13,9 @@
 
 body {
     font-family: 'Lato', sans-serif;
+}
+
+.landing-wrapper {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -82,6 +85,10 @@ nav {
 
 /*sign up heart*/
 
+#about-btn{
+    background-color: #590c8d;
+}
+
 #signup {
     margin-top: 15em;
     color: #590c8d;
@@ -150,12 +157,189 @@ width:75%;
 textarea.input-box.input-lg{
     width:75%;
     }
-/* Media Queries */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+    /*Modal Content*/
+.modal-div {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-body{
+    color:#42193d;
+    background-color: #ffcccc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.modal h2{
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 4.5em;
+    color: #ffcccc;
+}
+
+
+    /*Add Animation*/
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+    /*Close Button*/
+.close {
+  color: #ffcccc;
+  float: right;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #c31aad;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #42193d;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/*-----------Login form----------*/
+
+.content-login-section{
+    background: #42193d;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    color: #c31aad;
+  }
+
+  
+
+
+/*----------Profile Sytle-----------*/
+.hr-class{
+    color: #c31aad;
+}
+.profile-pic{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+
+  .content-profile-section{
+    background: #42193d;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-top: 22px;
+    margin-bottom: 20px;
+  }
+
+  
+  .article-title {
+    color: #c31aad;
+  }
+  
+  a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+  }
+  
+  .article-metadata a:hover {
+    color: #c31aad;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+    color: #c31aad;
+  }
+
+  .profile-title{
+      color: #c31aad;
+  }
+
+  #profile-username{
+      color: #c31aad;
+  }
+
+  
+
+    /* Media Queries */
 
 @media screen and (max-width: 500px) {
     header {
         flex-direction: column;
         align-items: flex-start;
+    }
+    #about-btn{
+        margin-left: -60px;
+    }
+    .modal h2{
+        font-size: 3.5em;
+    }
+    .modal-div {
+        width: 80%;
     }
 
 }

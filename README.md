@@ -1,4 +1,7 @@
 # Overview
+This project is a conjunct effort of [Amir Rastkhadiv](https://github.com/Amir-Rastkhadiv), [Chris Carabine](https://github.com/ccarabine),[Cian O'Connor](https://github.com/AlexNexton), [Daniel Callaghan](https://github.com/xiaoniuniu89), [Monique Veldman](https://github.com/Seamse) and [Rodolfo Frainer](https://github.com/nellymaw).
+
+The project aims to connect people with similar tastes/mentality/humor.
 
 # Table of contents
 - [Overview](#overview)
@@ -20,9 +23,16 @@
 <section id="about">
 
 # About
- The site is deployed here:
- 
- - https://example.com/ 
+Message in a bottle is an ocean of potential where you can met kindred spirits or fish for that special someone!
+Add your own bottled messages to our vast ocean or fish to your heart's content for other people's messages.
+Sign up today!
+- Sign up and create a profile with us
+- Fish for bottles in the ocean
+- Respond to messages that appeal to you
+- If the recipient likes your reply they can now contact you directly
+- Write secret half messages for your own bottles
+- Add them to our ocean and see who replies to and finishes your message
+- A received reply offers you the option to contact them directly
 
 </section>
 
@@ -62,17 +72,20 @@
 
 
 ## <p id="typography">Typography</p> 
-[Lato](https://fonts.google.com/specimen/Lato?query=lato&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom#standard-styles) and [Lovers Quarrel](https://fonts.google.com/specimen/Lovers+Quarrel?query=love&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom) fonts were used.
+[Lato](https://fonts.google.com/specimen/Lato?query=lato&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom#standard-styles) and [Love light](https://fonts.google.com/specimen/Love+Light?preview.text=Love%20is%20in%20the%20air&preview.text_type=custom) fonts were used.
 
 
 ## <p id="color">Colors</p> 
 
-![#1A5466](https://via.placeholder.com/15/1A5466/000000?text=+) `#1A5466`
+![#590c8d](https://via.placeholder.com/15/590c8d/000000?text=+) `#590c8d`
 
-![#982566](https://via.placeholder.com/15/982566/000000?text=+) `#982566`
+![#FFCCCC](https://via.placeholder.com/15/ffcccc/000000?text=+) `#FFCCCC`
 
-![#DE9D73](https://via.placeholder.com/15/DE9D73/000000?text=+) `#DE9D73`
+![#42193D](https://via.placeholder.com/15/42193D/000000?text=+) `#42193D`
 
+![#C31AAD](https://via.placeholder.com/15/C31AAD/000000?text=+) `#C31AAD`
+
+![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#FFFFFF`
 
 </section>
 
@@ -135,7 +148,7 @@ For Icons
 
 Used to create wireframes
 
-[Website Responsive Test](http://responsivetesttool.com/)
+[AmIResponsive](http://ami.responsivedesign.is/)
 
 Check responsivness on different devices
 
@@ -177,4 +190,5 @@ More detailed instructions can be found [here](https://docs.github.com/en/github
 
 # Credits <p id="credits"></p>
 
+- [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 - Images were taken from [Pexels.com](https://www.pexels.com)

@@ -1,72 +1,105 @@
 {% extends 'home/base.html' %}
+{% load static %}
 {% block content %}
 
 <section class="ocean">
-
+        
+    {% if group_a %}
     <div class="bottle-wrapper group-a">
-        {% for letter in group_a %}
-            <div class="bottle bottle-a">A</div>
-            <div class="letter-modal hidden basic-wrapper">
-                <div class="modal-wrapper">
+            {% for letter in group_a %}
+                <div class="bottle bottle-a">A</div>
+                <div class="letter-modal hidden basic-wrapper">
+                    <div class="modal-wrapper">
+                        <p>{{letter.author}}</p>
+                        <p>{{letter.body}}</p>
+                        <a href="{% url 'letter_detail' letter.slug %}">details</a>
+                    </div>
+                </div>
+            {% endfor %}
+    </div>
+    {% else %}
+        <div class="basic-wrapper card">
+            <h2>No Bottles in the ocean</h2>
+        </div>
+    {% endif %}
+
+    {% if group_b %}
+    <div class="bottle-wrapper group-b">
+            {% for letter in group_b %}
+                <div class="bottle bottle-b">B</div>
+                <div class="letter-modal hidden basic-wrapper">
                     <p>{{letter.author}}</p>
                     <p>{{letter.body}}</p>
+                    <a href="{% url 'letter_detail' letter.slug %}">details</a>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
     </div>
-    <div class="bottle-wrapper group-b">
-        {% for letter in group_b %}
-            <div class="bottle bottle-b">B</div>
-            <div class="letter-modal hidden basic-wrapper">
-                <p>{{letter.author}}</p>
-                <p>{{letter.body}}</p>
-            </div>
-        {% endfor %}
-    </div>
+    {% endif %}
+
+    {% if group_c %}
     <div class="bottle-wrapper group-c">
         {% for letter in group_c %}
             <div class="bottle bottle-c">C</div>
             <div class="letter-modal hidden basic-wrapper">
                 <p>{{letter.author}}</p>
                 <p>{{letter.body}}</p>
+                <a href="{% url 'letter_detail' letter.slug %}">details</a>
             </div>
         {% endfor %}
     </div>
+    {% endif %}
+
+    {% if group_d %}
+    <div class="bottle-wrapper group-d">
+        {% for letter in group_d %}
+            <div class="bottle bottle-d">D</div>
+            <div class="letter-modal hidden basic-wrapper">
+                <p>{{letter.author}}</p>
+                <p>{{letter.body}}</p>
+                <a href="{% url 'letter_detail' letter.slug %}">details</a>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- {% if group_e %}
+    <div class="bottle-wrapper group-e">
+        {% for letter in group_e %}
+            <div class="bottle bottle-e">C</div>
+            <div class="letter-modal hidden basic-wrapper">
+                <p>{{letter.author}}</p>
+                <p>{{letter.body}}</p>
+                <a href="{% url 'letter_detail' letter.slug %}">details</a>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if group_f %}
+    <div class="bottle-wrapper group-f">
+        {% for letter in group_f %}
+            <div class="bottle bottle-f">C</div>
+            <div class="letter-modal hidden basic-wrapper">
+                <p>{{letter.author}}</p>
+                <p>{{letter.body}}</p>
+                <a href="{% url 'letter_detail' letter.slug %}">details</a>
+
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %} -->
 
 </section>
 
-<!-- <div class="basic-wrapper">
-    <h1>Group A</h1>
-    {% for letter in group_a %}
-        <div class="bottle"></div>
-        <div class="letter-modal basic-wrapper">
-            <p>{{letter.author}}</p>
-            <p>{{letter.body}}</p>
-        </div>
-    {% endfor %}
-</div>
 
-<div class="basic-wrapper">
-    <h1>Group B</h1>
-            {% for letter in group_b %}
-                <p>{{letter.author}}</p>
-                <p>{{letter.body}}</p>
 
-            {% endfor %}
-</div>
 
-<div class="basic-wrapper">
-    <h1>Group C</h1>
-            {% for letter in group_c %}
-                <p>{{letter.author}}</p>
-                <p>{{letter.body}}</p>
-
-            {% endfor %}
-</div> -->
-
-        
-
-        
+    <script src="{% static 'bottles/js/ocean.js' %}"></script>
+    <script>
+        setTimeout(function(){
+        window.location.reload(1);
+        }, 90000);
+    </script>
 
 {% endblock content %}
 

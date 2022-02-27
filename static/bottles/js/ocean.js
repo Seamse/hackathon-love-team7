@@ -13,3 +13,6 @@ bottles.forEach((bottle) => {
       }
   });
 });
+
+
+setTimeout(function() { window.location=window.location;},5000);

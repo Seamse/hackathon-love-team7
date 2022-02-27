@@ -27,6 +27,8 @@
     color: red;
 }
 
+/* GROUP A  */
+
 .bottle-a:nth-child(1) {
     right: 35%; top: 70%;
     animation-delay: 2s;
@@ -41,68 +43,171 @@
 
 .bottle-a:nth-child(5) {
     right: 15%; top: 84%;
-    animation-delay: 6s;
+    animation-delay: 10s;
 }
 
 .bottle-a:nth-child(7) {
     right: 20%; top: 92%;
-    animation-delay: 8s;
+    animation-delay: 15s;
 
 }
 
 .bottle-a:nth-child(9) {
     right: 88%; top: 71%;
-    animation-delay: 10s;
+    animation-delay: 18s;
 
 }
 
+/* END GROUP A  */
+
+
+/* GROUP B  */
+
+
 .bottle-b:nth-child(1) {
     right: 25%; top: 82%;
-    animation-delay: 12s;
+    animation-delay: 23s;
 }
 
 
 .bottle-b:nth-child(3) {
     right: 68%; top: 70%;
-    animation-delay: 14s;
+    animation-delay: 28s;
 
 }
 
 .bottle-b:nth-child(5) {
     right: 28%; top: 81%;
-    animation-delay: 16s;
+    animation-delay: 32s;
 }
 
 .bottle-b:nth-child(7) {
     right: 20%; top: 92%;
-    animation-delay: 18s;
+    animation-delay: 38s;
 
 }
 
 .bottle-b:nth-child(9) {
     right: 9%; top: 83%;
-    animation-delay: 20s;
+    animation-delay: 42s;
 
 }
 
+/* END GROUP B  */
+
+/* GROUP C  */
+
 .bottle-c:nth-child(1) {
     right: 36%; top: 79%;
-    animation-delay: 22s;
+    animation-delay: 44s;
 }
 
 
 .bottle-c:nth-child(3) {
     right: 65%; top: 76%;
-    animation-delay: 24s;
+    animation-delay: 48s;
 
 }
 
 .bottle-c:nth-child(5) {
     right: 52%; top: 84%;
-    animation-delay: 26s;
+    animation-delay: 52s;
 }
 
 .bottle-c:nth-child(7) {
+    right: 20%; top: 92%;
+    animation-delay: 56s;
+
+}
+
+.bottle-c:nth-child(9) {
+    right: 88%; top: 81%;
+    animation-delay: 62s;
+}
+
+/* GROUP D */
+
+.bottle-d:nth-child(1) {
+    right: 36%; top: 79%;
+    animation-delay: 64s;
+}
+
+
+.bottle-d:nth-child(3) {
+    right: 65%; top: 76%;
+    animation-delay: 68s;
+
+}
+
+.bottle-d:nth-child(5) {
+    right: 52%; top: 84%;
+    animation-delay: 71s;
+}
+
+.bottle-d:nth-child(7) {
+    right: 20%; top: 92%;
+    animation-delay: 75s;
+
+}
+
+.bottle-d:nth-child(9) {
+    right: 88%; top: 81%;
+    animation-delay: 80s;
+}
+
+/* END GROUP D  */
+
+/* GROUP E  */
+
+.bottle-e:nth-child(1) {
+    right: 36%; top: 79%;
+    animation-delay: 22s;
+}
+
+
+.bottle-e:nth-child(3) {
+    right: 65%; top: 76%;
+    animation-delay: 24s;
+
+}
+
+.bottle-e:nth-child(5) {
+    right: 52%; top: 84%;
+    animation-delay: 26s;
+}
+
+.bottle-e:nth-child(7) {
+    right: 20%; top: 92%;
+    animation-delay: 28s;
+}
+
+.bottle-e:nth-child(9) {
+    right: 88%; top: 81%;
+    animation-delay: 30s;
+}
+
+/* END GROUP E  */
+
+
+/* GROUP F  */
+
+.bottle-f:nth-child(1) {
+    right: 36%; top: 79%;
+    animation-delay: 22s;
+}
+
+
+.bottle-f:nth-child(3) {
+    right: 65%; top: 76%;
+    animation-delay: 24s;
+}
+
+.bottle-f:nth-child(5) {
+    right: 52%; top: 84%;
+    animation-delay: 26s;
+}
+
+.bottle-f:nth-child(7) {
     right: 20%; top: 92%;
     animation-delay: 28s;
 
@@ -112,6 +217,9 @@
     right: 88%; top: 81%;
     animation-delay: 30s;
 }
+
+/* END GROUP F  */
+
 
 @keyframes appear {
     0% {opacity: 0; }

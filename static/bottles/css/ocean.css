@@ -39,7 +39,6 @@
 .bottle-a:nth-child(3) {
     right: 65%; top: 75%;
     animation-delay: 4s;
-
 }
 
 .bottle-a:nth-child(5) {
@@ -148,7 +147,6 @@
 .bottle-d:nth-child(7) {
     right: 20%; top: 92%;
     animation-delay: 75s;
-
 }
 
 .bottle-d:nth-child(9) {

@@ -15,6 +15,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+
 .landing-wrapper {
     height: 100vh;
     width: 100vw;
@@ -27,6 +28,10 @@ body {
 
 a {
     text-decoration: none !important;
+}
+
+.hidden {
+    display: none;
 }
 
 #logo {
@@ -330,6 +335,16 @@ box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
       color: #c31aad;
   }
 
+
+/* inbox  */
+
+.inbox-letter {
+    padding: 1em;
+    border-radius: 25px;
+    background-color: #FFCCCC;
+    margin: .5em 0;
+
+}
   
 
     /* Media Queries */
@@ -356,6 +371,8 @@ box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
     #signup {
         margin-top: 12em;
     }
+
+    .button.navbar
 }
 
 @media screen and (max-width: 350px) {

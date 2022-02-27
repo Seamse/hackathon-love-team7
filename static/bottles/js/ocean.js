@@ -15,4 +15,6 @@ bottles.forEach((bottle) => {
 });
 
 
+
+
 setTimeout(function() { window.location=window.location;},90000);

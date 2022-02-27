@@ -1,0 +1,38 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="basic-wrapper">
+    <h1>{{user.username}}'s inbox</h1>
+    <div class="button-wrapper">
+        <div id="btn-all" class="btn btn-info">All</div>
+        <div id="btn-thrown" class="btn btn-info">Thrown</div>
+        <div id="btn-fished" class="btn btn-info">Fished</div>
+        <div id="btn-unreply" class="btn btn-info">Unreplied</div>
+    </div>
+
+    {% for letter in letter_with_unseen_reply %}
+    <a class="all thrown" href="{% url 'letter_detail' letter.slug %}">
+        <div class="inbox-letter">Letter from {{letter.author}} | {{letter.created_on}} letter unseen reply</div>
+    </a>
+    {% endfor %}
+    {% for letter in letter_with_seen_reply %}
+    <a class="all thrown" href="{% url 'letter_detail' letter.slug %}">
+        <div class="inbox-letter">Letter from {{letter.author}} | {{letter.created_on}} letter seen reply</div>
+    </a>
+    {% endfor %}
+    {% for reply in replys %}
+    <a class="all fished" href="{% url 'letter_detail' reply.letter.slug %}">
+        <div class="inbox-letter">Letter from {{reply.letter.author}} | {{reply.letter.created_on}} a letter the user replied to</div>
+    </a>
+    {% endfor %}
+    {% for letter in unreplied_letters %}
+    <a class="all unreply thrown"  href="{% url 'letter_detail' letter.slug %}">
+        <div class="inbox-letter">Letter from {{letter.author}} | {{letter.created_on}} users unreplied letters</div>
+    </a>
+    {% endfor %}
+</div>
+
+    <script src="{% static 'profiles/js/inbox.js' %}"></script>
+
+{% endblock content %}

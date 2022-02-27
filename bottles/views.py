@@ -48,6 +48,8 @@ class LetterDetail(View):
         """
         queryset = Letter.objects
         letter = get_object_or_404(queryset, slug=slug)
+        letter.has_unseen_reply = False
+        letter.save()
         replys = letter.replys.order_by("-created_on")  # oldest first
         return render(
             request,
@@ -74,8 +76,14 @@ class LetterDetail(View):
             reply = reply_form.save(commit=False)
             reply.letter = letter
             reply.save()
+            letter.has_unseen_reply = True
+            if letter.has_reply is False:
+                letter.has_reply = True
+            letter.save()
         else:
             reply_form = ReplyForm()
+            letter.has_unseen_reply = False 
+            letter.save()
         return render(
             request, "home/landing_detail.html",
             {

@@ -12,6 +12,9 @@ class Letter(models.Model):
         User, on_delete=models.CASCADE, related_name="bottle_letter"
     )
     created_on = models.DateTimeField(auto_now_add=True)
+    has_reply = models.BooleanField(default=False)
+    has_unseen_reply = models.BooleanField(default=False)
+
 
     class Meta:
         """
@@ -37,8 +40,8 @@ class Reply(models.Model):
     letter = models.ForeignKey(Letter, on_delete=models.CASCADE,
                                related_name="replys")
     name = models.CharField(max_length=80)
-    email = models.EmailField(max_length=254, unique=True)
-    body = models.CharField(max_length=100, unique=True)
+    email = models.EmailField(max_length=254, unique=False)
+    body = models.CharField(max_length=100, unique=False)
     created_on = models.DateTimeField(auto_now_add=True)
     likes = models.ManyToManyField(
         User, related_name='bottlereply_like', blank=True)

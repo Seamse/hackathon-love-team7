@@ -1,23 +1,35 @@
 const bottles = document.querySelectorAll('.bottle')
+const closeLetter = document.querySelectorAll('.throw-btn')
+
+modalOpen = false
 
 bottles.forEach((bottle) => {
   bottle.addEventListener('click', (e) => {
       let letter = e.target.nextElementSibling
-      if(letter.classList.contains('hidden')){
-          letter.classList.remove('hidden')
-          letter.classList.add('card')
-
-      }else {
-          letter.classList.add('hidden')
-          letter.classList.remove('card')
-      }
+      letter.style.display = "flex";
+      modalOpen = true
   });
 });
 
+closeLetter.forEach(letter => {
+  letter.addEventListener('click', (e) => {
+    e.target.parentElement.parentElement.parentElement.style.display = "none";
+      modalOpen = false
+
+  })
+})
 
 
+function refreshPage(){
+  if(modalOpen === false){
+  window.location=window.location
+  }else {
+    setTimeout(refreshPage , 5000);
+  }
 
-setTimeout(function() { window.location=window.location;},90000);
+}
+
+setTimeout(refreshPage , 90000);
 
 // Message variables
 const messages = document.getElementById('msg');

@@ -8,11 +8,16 @@
     <div class="bottle-wrapper group-a">
             {% for letter in group_a %}
                 <div class="bottle bottle-a"></div>
-                <div class="letter-modal hidden basic-wrapper">
-                    <div class="modal-wrapper">
-                        <p>{{letter.author}}</p>
-                        <p>{{letter.body}}</p>
-                        <a href="{% url 'letter_detail' letter.slug %}">Reply</a>
+                <div class="letter-modal">
+                    <div class="modal-wrapper letter-content">
+                        <div class="letter-msg">
+                            <p>{{letter.author}}</p>
+                            <p>{{letter.body}}</p>
+                        </div>
+                       <div class="letter-btns">
+                            <a class="letter-btn" style="background-color: #ffcccc;" href="{% url 'letter_detail' letter.slug %}">Reply</a>
+                            <button id="close-letter-modal" style="background-color: #c31aad;" class="letter-btn throw-btn">Throw back</button>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
@@ -27,10 +32,17 @@
     <div class="bottle-wrapper group-b">
             {% for letter in group_b %}
                 <div class="bottle bottle-b"></div>
-                <div class="letter-modal hidden basic-wrapper">
-                    <p>{{letter.author}}</p>
-                    <p>{{letter.body}}</p>
-                    <a href="{% url 'letter_detail' letter.slug %}">Reply</a>
+                <div class="letter-modal">
+                    <div class="modal-wrapper letter-content">
+                        <div class="letter-msg">
+                            <p>{{letter.author}}</p>
+                            <p>{{letter.body}}</p>
+                        </div>
+                          <div class="letter-btns">
+                            <a class="letter-btn" style="background-color: #ffcccc;" href="{% url 'letter_detail' letter.slug %}">Reply</a>
+                            <button id="close-letter-modal" style="background-color: #c31aad;" class="letter-btn throw-btn">Throw back</button>
+                        </div>
+                    </div>
                 </div>
             {% endfor %}
     </div>
@@ -40,11 +52,18 @@
     <div class="bottle-wrapper group-c">
         {% for letter in group_c %}
             <div class="bottle bottle-c"></div>
-            <div class="letter-modal hidden basic-wrapper">
-                <p>{{letter.author}}</p>
-                <p>{{letter.body}}</p>
-                <a href="{% url 'letter_detail' letter.slug %}">Reply</a>
-            </div>
+            <div class="letter-modal">
+                    <div class="modal-wrapper letter-content">
+                        <div class="letter-msg">
+                            <p>{{letter.author}}</p>
+                            <p>{{letter.body}}</p>
+                        </div>
+                        <div class="letter-btns">
+                            <a class="letter-btn" style="background-color: #ffcccc;" href="{% url 'letter_detail' letter.slug %}">Reply</a>
+                            <button id="close-letter-modal" style="background-color: #c31aad;" class="letter-btn throw-btn">Throw back</button>
+                        </div>
+                    </div>
+                </div>
         {% endfor %}
     </div>
     {% endif %}
@@ -53,41 +72,22 @@
     <div class="bottle-wrapper group-d">
         {% for letter in group_d %}
             <div class="bottle bottle-d"></div>
-            <div class="letter-modal hidden basic-wrapper">
-                <p>{{letter.author}}</p>
-                <p>{{letter.body}}</p>
-                <a href="{% url 'letter_detail' letter.slug %}">Reply</a>
-            </div>
+           <div class="letter-modal">
+                    <div class="modal-wrapper letter-content">
+                        <div class="letter-msg">
+                            <p>{{letter.author}}</p>
+                            <p>{{letter.body}}</p>
+                        </div>
+                         <div class="letter-btns">
+                            <a class="letter-btn" style="background-color: #ffcccc;" href="{% url 'letter_detail' letter.slug %}">Reply</a>
+                            <button id="close-letter-modal" style="background-color: #c31aad;" class="letter-btn throw-btn">Throw back</button>
+                        </div>
+                    </div>
+                </div>
         {% endfor %}
     </div>
     {% endif %}
 
-    <!-- {% if group_e %}
-    <div class="bottle-wrapper group-e">
-        {% for letter in group_e %}
-            <div class="bottle bottle-e">C</div>
-            <div class="letter-modal hidden basic-wrapper">
-                <p>{{letter.author}}</p>
-                <p>{{letter.body}}</p>
-                <a href="{% url 'letter_detail' letter.slug %}">details</a>
-            </div>
-        {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if group_f %}
-    <div class="bottle-wrapper group-f">
-        {% for letter in group_f %}
-            <div class="bottle bottle-f">C</div>
-            <div class="letter-modal hidden basic-wrapper">
-                <p>{{letter.author}}</p>
-                <p>{{letter.body}}</p>
-                <a href="{% url 'letter_detail' letter.slug %}">details</a>
-
-            </div>
-        {% endfor %}
-    </div>
-    {% endif %} -->
 
 </section>
 

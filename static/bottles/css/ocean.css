@@ -12,6 +12,7 @@
     display: none;
 }
 
+
 .letter-content {
     background: url("../img/paper.png") no-repeat center;
     background-size: 100% 90%;
@@ -19,6 +20,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center; align-items: center;
+
     font-weight: 600;
     font-size: large; 
 }

@@ -1,23 +1,31 @@
 # Overview
 This project is a conjunct effort of [Amir Rastkhadiv](https://github.com/Amir-Rastkhadiv), [Chris Carabine](https://github.com/ccarabine),[Cian O'Connor](https://github.com/AlexNexton), [Daniel Callaghan](https://github.com/xiaoniuniu89), [Monique Veldman](https://github.com/Seamse) and [Rodolfo Frainer](https://github.com/nellymaw).
 
-The project aims to connect people through half phrases at a time.
+February's code institute's Hackaton is Valentines, our group decided that our main goal is to keep the dating scene light-hearted, helping users to connect with one another using only half sentences, this way the user doesn't have to overthink as it is very limiting and can be answered in a short amount of time.
 
 # Table of contents
 - [Overview](#overview)
 - [Table of contents](#table-of-contents)
 - [About](#about)
 - [UX Design](#ux-design)
+  - [Project Goals](#project-goals)
   - [User Stories](#user-stories)
   - [Typography](#typography)
   - [Colors](#colors)
   - [Wireframes](#wireframes)
+  - [Landing Page](#landing-page)
+  - [Mobile Landing Page](#mobile-landing-page)
 - [Features](#features)
+  - [Nav Bar](#nav-bar)
+  - [Landing Page](#landing-page-1)
+  - [Login Page](#login-page)
   - [Features left to impliment](#features-left-to-impliment)
 - [Technologies Used](#technologies-used)
   - [Languages Used](#languages-used)
   - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
   - [Dev Tools](#dev-tools)
+  - [Database](#database)
+    - [Database Schema](#database-schema)
 - [Testing](#testing)
   - [Validation Results](#validation-results)
   - [Test Cases](#test-cases)
@@ -29,7 +37,7 @@ The project aims to connect people through half phrases at a time.
 - [Credits](#credits)
 
 # About
-Message in a bottle is an ocean of potential where you can met kindred spirits or fish for that special someone!
+Message in a bottle is an ocean of potential where you can meet kindred spirits or fish for that special someone!
 Add your own bottled messages to our vast ocean or fish to your heart's content for other people's messages.
 Sign up today!
 - Sign up and create a profile with us
@@ -42,20 +50,22 @@ Sign up today!
 
 # UX Design
 
+## Project Goals
+To create a light and engaging space where people can communicate with other people with anonymity until they decide that someone is compatible with them.
+- Keep the website light and engaging.
+- Get the user possibly connected with someone that he/she has something in common.
+- Allowing the user choose if he will share his personal information to anyone
+
 ## User Stories
 - As a user I would like to be able to access the about section of the page to understand it's purpose and how to interact with it.
 
 - As a user I would like to be able to create an account.
 
 - As a user I would like to be able to login into the account I've previously created.
-  
-- As a user I would like to be able to edit my Bio on my account.
 
 - As a user I would like to be able to change my account's password.
 
 - As a user I would like to be able to create my own bottled messages so other people can interact with.
-
-- As a user I would like to be able to choose which bottle i want to pick.
 
 - As a user I would like to be able to respond or not to a bottle that I have picked up.
 
@@ -63,15 +73,12 @@ Sign up today!
 
 - As a user I would like the messages in my inbox to be refreshed periodically.
 
-- As a user I would like to be able to read the bio and see the profile picture of a user that has replied to my bottled message so I can decide if I want to contact them or not.
-
 - As a user I would like to be able to contact other users who have replied to my bottles via a contact form.
 
 ## Typography
 - [Lato](https://fonts.google.com/specimen/Lato?query=lato&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom#standard-styles) and [Lovers Quarrel](https://fonts.google.com/specimen/Lovers+Quarrel?query=love&preview.text=Love%20is%20in%20the%20air&preview.text_type=custom) fonts were used.
 
 ## Colors
-
 ![#590c8d](https://via.placeholder.com/20/590c8d/000000?text=+) `#590c8d`
 
 ![#FFCCCC](https://via.placeholder.com/20/ffcccc/000000?text=+) `#FFCCCC`
@@ -82,21 +89,32 @@ Sign up today!
 
 ![#FFFFFF](https://via.placeholder.com/20/FFFFFF/000000?text=+) `#FFFFFF`
 
-
-
 ## Wireframes
+## Landing Page
+![Landing Page](readmeContent/wireframes/landingPageTop.png)
 
-Wireframes can be found [here](WIREFRAMES-MISSING)
-
+## Mobile Landing Page
+![Landing Page Mobile](readmeContent/wireframes/landingPageMobile.png)
 
 # Features
+## Nav Bar
+- Home button<br>![HomeButton](readmeContent/features/homeButton.png)
+- About button<br> ![AboutButton](readmeContent/features/aboutButton.png)
+- Login button<br> ![LoginButton](readmeContent/features/loginButton.png)
+
+## Landing Page
+- Sign up button<br> ![SignUpButtonNoHover](readmeContent/features/signupButtonNoHover.png)<br>![SignUpButtonHover](readmeContent/features/signupButtonHover.png)
+- Social Media buttons<br> ![SocialMediaButtons](readmeContent/features/SocialMedia.png)
+
+## Login Page
+- Login page<br> ![LoginPage](readmeContent/features/loginPage.png)
+
 ## Features left to impliment
 
 
 
 # Technologies Used 
 ## Languages Used
-
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) 
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 
@@ -104,7 +122,6 @@ Wireframes can be found [here](WIREFRAMES-MISSING)
 - [Python](https://www.python.org/) 
 
 ## Frameworks, Libraries & Programs Used
-
 - [Django:](https://www.djangoproject.com/) Django is the framework used through the project.
 - [Gitpod:](https://www.gitpod.io) 
    Gitpod was used as an IDE for most of the participants.
@@ -121,6 +138,11 @@ Wireframes can be found [here](WIREFRAMES-MISSING)
 
 ## Dev Tools
 [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) & [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
+
+## Database
+A relational database was used for this project. During development SQLite DB was used and for production Postgres was used as the main database, and for deployment all data was migrated to Heroku Postgres.
+### Database Schema
+![Database Schema](readmeContent/databaseSchema.png)
 
 # Testing 
 
@@ -149,49 +171,42 @@ Result for Mobile
 
 ## Test Cases
 - To access the about section of the page:
-  - Low resolution devices<br><br>
-    Click on the hamburger menu<br>
-    ![Hamburger-Low-Res](readmeContent/testCases/access-about-section/lowResolutionFirstStep.png)
+  
+  On the right corner of the nav bar you will find the About button<br>
+  ![About-High-Res](readmeContent/testCases/access-about-section/highResolutionFirstStep.png)
 
-    A few options will appear, click on the about button<br>
-    ![About-Low-Res](readmeContent/testCases/access-about-section/lowResolutionSecondStep.png)
-
-    Once clicked it will open a modal window<br>
-    ![About-Modal-Low-Res](readmeContent/testCases/access-about-section/LowResolutionThirdStep.png)
-
-    To close it the user can either press the X button or click outside of the modal<br>
-    ![Close-Modal-Low-Res](readmeContent/testCases/access-about-section/lowResolutionFourthStep.png)
+  Once clicked it will open a modal window<br>
+  ![About-Modal-High-Res](readmeContent/testCases/access-about-section/highResolutionSecondStep.png)
 
 
-  - High resolution devices:<br><br>
-    On the right corner of the nav bar you will find the About button<br>
-    ![About-High-Res](readmeContent/testCases/access-about-section/highResolutionFirstStep.png)
+- To create an account:<br>
+First press the sign up button<br>
+![signupButtonNoHover](readmeContent/features/signUpButtonNoHover.png)<br>
+Once in the Sign up page fill the boxes and press sign up.<br>
+![signUppage](readmeContent/features/signUppage.png)
 
-    Once clicked it will open a modal window<br>
-    ![About-Modal-High-Res](readmeContent/testCases/access-about-section/highResolutionSecondStep.png)
-
-    To close it the user can either press the X button or click outside of the modal<br>
-    ![Close-Modal-High-Res](readmeContent/testCases/access-about-section/highResolutionThirdStep.png)
-
-- To create an account:
-
-- To login on a previously created account:
-
-- To edit one's Bio on their account:
+- To login on a previously created account:<br>
+Press the login button found on the right of the navbar<br>
+![SigninPage](readmeContent/features/SigninPage.png)<br>
+Fill the field boxes up then press the login button
 
 - To change an account's password:
 
 - To create bottled messages:
 
 - To pick a bottled message from someone:
+  Once logged in Press the "GO FISH" button located on the navbar
+  ![GoFishPage](readmeContent/features/GoFishPage.png)
+  In a few seconds the page will start to be populated with bottles. Just click on whichever one you want to pick up.
 
-- To respond to a picked up bottle:
-
-- To not respond to a picked up bottle:
+- To respond or not to a picked up bottle:
+  Once the user pick a bottle up hes met with two choices:
+  ![BottleChoice](readmeContent/features/BottleChoice.png)
+  Press "reply" to reply the message or press "Throw back" to not reply to the message
 
 - To access the user's inbox:
 
-- T check if the inbox was refreshed automatically:
+- To check if the inbox was refreshed automatically:
 
 - To view the profile of an user that has replied to one of the messages written by the user:
 
@@ -245,7 +260,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 1. Install the gitpod browser extension. [Gitpod Browser Extension](https://www.gitpod.io/docs/browser-extension/)
 2. Go to the project repository. [Here](!!!CHANGE-THIS!!!)
-3. click the gitpod button beside the about section.  ![Gitpod Deploy](readmeContent/gitpodDeploy.png)
+3. Click the gitpod button beside the about section.  ![Gitpod Deploy](readmeContent/gitpodDeploy.png)
 
 
 

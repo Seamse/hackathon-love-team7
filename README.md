@@ -3,7 +3,8 @@ This project is a conjunct effort of [Amir Rastkhadiv](https://github.com/Amir-R
 
 The project aims to connect people through half phrases at a time.
 
-# Table of contents
+## **Contents** ##
+
 - [Overview](#overview)
 - [Table of contents](#table-of-contents)
 - [About](#about)
@@ -103,49 +104,163 @@ Wireframes can be found [here](WIREFRAMES-MISSING)
 - [Jquery](https://jquery.com/) 
 - [Python](https://www.python.org/) 
 
-## Frameworks, Libraries & Programs Used
+### **Libraries** ###
+​
+- Bootstrap
+Used to design a mobile-first responsive website layout.
+- jQuery
+Loaded as part of the Bootstrap CDN starter template
+- Popper
+Loaded as part of the Bootstrap CDN starter template
 
-- [Django:](https://www.djangoproject.com/) Django is the framework used through the project.
-- [Gitpod:](https://www.gitpod.io) 
-   Gitpod was used as an IDE for most of the participants.
-- [Github:](https://www.github.com)
-   GitHub is used to store the projects code after being pushed from [Git](https://git-scm.com/).
-- [Font Awesome:](https://fontawesome.com/)
-    Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-- [Google Fonts:](https://fonts.google.com/)
-    Google fonts were used to import the 'Lato' font into the style.css file which is used on all pages throughout the project.
-- [Balsamiq:](https://https://balsamiq.com/)
-    Balsamiq was used to create the wireframes used on this project.
-- [AmIResponsive:](http://ami.responsivedesign.is/)
-    Was used to check the website's responsiveness on common resolutions.
+​
+### **Tools** ###
+
+## Frameworks, Libraries & Programs Used
+​
+- [Git](https://git-scm.com/)
+  - Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+- [GitHub](https://github.com/)
+  - Used to store, host and deploy the project files and source code after being pushed from Git.
+- [GitPod](https://www.gitpod.io/)
+  - An online IDE linked to the GitHub repository used for the majority of the code development.
+- [CodePen](https://codepen.io/simonjvardy/)
+  - An online code editor and open-source learning environment used to test small sections of code quickly and easily.
+- [Visual Studio Code](https://code.visualstudio.com/)
+  - A locally installed IDE connected to the GitHub repository for when there was no internet connection to use Gitpod.
+- [Font-Awesome](https://fontawesome.com/icons?d=gallery)
+  - Used for icons to enhance headings and add emphasis to text.
+- [Google fonts](https://fonts.google.com/)
+  - Used for the website fonts.
+- [Coolors](https://coolors.co/)
+  - An online tool used to choose the website colour scheme.
+- [Am I Responsive?](http://ami.responsivedesign.is/)
+  - A tool for taking a quick snapshot of the responsive breakpoints of the website to visualize how the site will look on different device screen sizes in one place. The resulting screenshot is also used as the README.md logo image.
+- [What is my Screen Resolution](http://whatismyscreenresolution.net/)
+  - An online tool to find out the screen resolution on your device used for CSS @media queries
+​- [Favicon](https://favicon.io/)
+  - Used for icons to enhance headings and add emphasis to text.
+- [Django](https://www.djangoproject.com/) 
+  - Django is the framework used through the project.
+- [Google Fonts](https://fonts.google.com/)
+    - Google fonts were used to import the 'Lato' font into the style.css file which is used on all pages throughout the project.
+- [Balsamiq](https://https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes used on this project.
+
+  [Back to contents](#contents)
 
 ## Dev Tools
 [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) & [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools)
 
+
+## **Development Lifecycle and Task Allocation** ##
+
+- The Team is made up of all experience levels from those who have only just started the course, right up to Alumni.
+  - Our first task was to figure out at which level everyone is and how much time each of us has.
+- Our team is [Daniel Callaghan](https://github.com/xiaoniuniu89), [Christopher Carabine](https://github.com/ccarabine), [Rodolfo Frainer](https://github.com/nellymaw), [Monique](https://github.com/Seamse), [Amir Rastkhadiv](https://github.com/Amir-Rastkhadiv) and [Cian O'Connor](https://github.com/AlexNexton).
+- Initailly, we split all the task between us according to experience and competence.
+- As the team developed and became more confident, we were able to help one another depending on the task and time we had free.
+
+
+
+## **Version Control** ##
+**Version control** for this repository is managed within **GitHub** and **Gitpod** using separate forked repositories for each team member.
+
+Each member synchronised their own GitHub repositories by adding an additional remote  named `upstream` linked to the team's main [GitHub Repository](https://github.com/Seamse/hackathon-love-team7) by entering the following steps Git commands:
+
+```
+git remote add upstream https://github.com/Seamse/hackathon-love-team7.git
+git fetch upstream
+git merge upstream/master
+git push
+```
+
+The following describes a typical Team Member's forked repository branch structure. The word 'contributor' is a placeholder for the otherwise name of the person or persons working on a paticular branch:
+- **Master** - this is the default branch and the source for the repository deployment.
+
+    - **contributor-README** - this branch is used for updating the README.md and testing.md documentation only.
+
+   -  **contributor_backend** -this branch is used for creating and updating all backend activities.
+    -  **contributor_hompage** - this branch is used for styling and working on the index.html page.
+    -  **contributor_style** - this branch is used for styling each page across the site so that they all look the same.
+
+
+
+    
+     
+​
+The following workflow steps are used to create and update branches within Gitpod and to push changes back to GitHub.
+​
+​
+#### **Gitpod Workspaces** ####
+1. Open **Gitpod** from **Github** using the Gitpod button. This needs to only be done **once** at the start of the project.
+2. Start the Gitpod Workspace which opens an **online IDE editor** window.
+​
+​
+#### **Branches** ####
+3. For changes to be made to any **documentation files**, the git command `git checkout documentation` is used to checkout and switch to the **documentation branch**.
+4. For changes to be made to **other files** under normal site development, the git command `git checkout development` is used to checkout and switch to the **development branch**.
+5. To create a **new branch** for bug fixes, use the git command `git checkout -b <branch-name>` to **create and switch** to the new branch.
+​
+​
+#### **Working within a branch** ####
+6. **New** or **modified** files are **staged** using the `git add .` command
+7. The changes are **committed** using `git commit -m "<commit message>"` command.
+8. If the changes are in a newly created branch, the **committed** changes are **pushed** from Gitpod to GitHub using the `git push --set-upstream origin <branch-name>` command as there is currently no upstream branch in the remote repository.
+9. For branches that have already been synchronized, the **committed** changes are **pushed** from Gitpod to GitHub using the `git push` command.
+​
+​
+#### **Merging branches in GitHub** ####
+10. Opening the repository in Github, a new **pull request** is created for the updated branch and assigned to its related **Development**, **Development - JavaScript** or **Bug Fixes** project.
+11. The changes are **reviewed** to ensure there are **no conflicts** between the **updated branch** and the **Master branch**.
+12. The changes are then **merged** into the **Master branch** and the merge request is **closed**. The **Project entry** is **automatically** moved to the **Done** card.
+​
+​
+#### **Update Gitpod with the latest GitHub commits** ####
+13. To update Gitpod with the **latest commits** From GitHub, the `git checkout master` command is used to checkout and switch to the master branch.
+14. Use the `git pull` command to update the master branch and **reset the pointer**.
+15. Now **switch** to the **other branches** in Gitpod using the `git checkout <branch-name>` command and use the `git merge origin/master` command to **update each branch in turn**.
+16. Use the `git push` on **each branch** to update the relevant GiHub Branches to the **same commit** as the **Master branch**.
+17. **Repeat steps 3 - 17 regularly** to ensure updates are **saved** and **correctly version controlled** in GitHub.
+    
+#### **Pull Requests** ####
+
+18. To update the upstream remote repository, each Team Member creates a pull request from the their forked master branch (`origin/master`) to the upstream Team repository (`upstream/master`)
+19. The pull request is reviewed and any merge conflicts are resolved before merging into the upstream master branch.
+20. Team Members must then fetch the latest commits again to their forked repositories using the following Git commands:
+
+```
+git fetch upstream
+git merge upstream/master
+git push
+```
+
+ [Back to contents](#contents)
+
 # Testing 
 
 ## Validation Results
-HTML
+**HTML**
 
 [W3C validator](MISSING-URL)
 
-CSS
+**CSS**
 
 [(Jigsaw) validator](MISSING-URL)
 
-JSHint
+**JSHint**
 
 [JSHint](https://jshint.com/) test completed with no error or warnings.
 
-Lighthouse
+**Lighthouse**
 
-Result for Desktop 
+**Result for Desktop**
 
-![Lighthouse Validation](light-house-not-working-here)
+[Lighthouse Validation](light-house-not-working-here)
 
-Result for Mobile
+**Result for Mobile**
 
-![Lighthouse Validation](light-house-not-working-here)
+[Lighthouse Validation](light-house-not-working-here)
 
 ## Test Cases
 - To access the about section of the page:
@@ -173,30 +288,7 @@ Result for Mobile
     To close it the user can either press the X button or click outside of the modal<br>
     ![Close-Modal-High-Res](readmeContent/testCases/access-about-section/highResolutionThirdStep.png)
 
-- To create an account:
-
-- To login on a previously created account:
-
-- To edit one's Bio on their account:
-
-- To change an account's password:
-
-- To create bottled messages:
-
-- To pick a bottled message from someone:
-
-- To respond to a picked up bottle:
-
-- To not respond to a picked up bottle:
-
-- To access the user's inbox:
-
-- T check if the inbox was refreshed automatically:
-
-- To view the profile of an user that has replied to one of the messages written by the user:
-
-- To contact another user via the contact form provided.
-
+ [Back to contents](#contents)
 # Deployment
 
 ## GitHub Pages
@@ -247,9 +339,37 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 2. Go to the project repository. [Here](!!!CHANGE-THIS!!!)
 3. click the gitpod button beside the about section.  ![Gitpod Deploy](readmeContent/gitpodDeploy.png)
 
-
+ [Back to contents](#contents)
 
 # Credits
 
-- [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
-- Images were taken from [Pexels.com](https://www.pexels.com)
+
+
+
+### **Acknowledgements** ###
+​
+- [W3Schools](https://www.w3schools.com/)
+  - for just being a constant source of help and inspiration!
+- [Code Institute](https://codeinstitute.net/-full-stack-software-development-diploma/)
+  - Course material for the inspiration from code-along challenges.
+- [Software Testing Fundamentals (STF)](http://softwaretestingfundamentals.com/) 
+  -  for an excellent guide on building testing processes.
+- [Git - Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) 
+  - documentation for help understanding how to manage branches in GitHub / Gitpod.
+- [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/) 
+  - for Boostrap help and tutorials.
+- [GitHub](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) 
+ - Help guide on using Error 404 pages on repositories.
+- [Colorlib](https://colorlib.com) 
+  - the 404.html was made by Colorlib. Go visit their website for more awesome templates, themes and tools.
+- [Stack Overflow](https://stackoverflow.com/)
+  - For help fixing so many thing that fell over on this project!
+- [Bootstrap](https://getbootstrap.com/)
+- [Pexels.com](https://www.pexels.com)
+  - Images were taken from 
+
+Our team is [Daniel Callaghan](https://github.com/xiaoniuniu89), [Christopher Carabine](https://github.com/ccarabine), [Rodolfo Frainer](https://github.com/nellymaw), [Monique Veldman](https://github.com/Seamse), [Amir Rastkhadiv](https://github.com/Amir-Rastkhadiv) and [Cian O'Connor](https://github.com/AlexNexton).
+
+**​The team would like to thank [Nemanja]() for his support, encouraging us along the way.**
+
+**And [Code Institute](https://github.com/Code-Institute-Org) for setting up these amazing projects that allow people to come together and do what they love in a safe space.**

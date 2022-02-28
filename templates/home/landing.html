@@ -1,10 +1,15 @@
 {% extends 'home/base.html' %}
 {% block content %}
-<a href="{% url 'addletter' %}" aria-label="Create a new letter">  Create new letter</a>
+<!-- <a href="{% url 'addletter' %}" aria-label="Create a new letter">  Create new letter</a> -->
 <!--===============LANDING PAGE========================Background -->
 
 <div id="row">
     <div class="column" Id="body-image">
+        {% if messages %}
+    {% for message in messages %}
+    <div style="position: absolute; top: 0; width: 100vw; background-color: #FFCCCC;" class="alert ">{{message}}</div>
+    {% endfor %}
+    {% endif %}
     </div>
 
 

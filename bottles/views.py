@@ -8,6 +8,7 @@ from .models import Letter
 from .forms import ReplyForm
 import random
 from .forms import LetterForm
+
 class LetterList(generic.ListView):
     """
     docstring

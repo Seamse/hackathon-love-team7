@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.views import generic, View
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.core.mail import send_mail
 from django.template.defaultfilters import slugify
 from .models import Letter
@@ -9,7 +10,8 @@ from .forms import ReplyForm
 import random
 from .forms import LetterForm
 
-class LetterList(generic.ListView):
+
+class LetterList(LoginRequiredMixin, generic.ListView):
     """
     docstring
     """
@@ -36,7 +38,7 @@ class LetterList(generic.ListView):
         return context
 
 
-class LetterDetail(View):
+class LetterDetail(LoginRequiredMixin, View):
     """
     A view to show 5 lastest letters ordered by created
     Args:
@@ -128,7 +130,7 @@ def ContactView(request, slug):
         # messages.success(request, 'Email sent successfully')
     return render(request, 'bottles/contact.html',  {'slug': slug, 'email': email, 'replys': replys, 'username':username})
 
-
+@login_required
 def AddLetter(request):
     """
     A view to add a letter, redirects to the home page when submitted

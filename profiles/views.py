@@ -1,14 +1,16 @@
 from django.shortcuts import render, get_object_or_404
 from bottles.models import Letter, Reply
 from .models import Profile
-
 from .forms import ProfileForm
-
 from django.views import generic
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+
 
 
 # Create your views here.
 
+@login_required
 def profiles(request):
     """
     dlkcvjadl
@@ -28,7 +30,7 @@ def profiles(request):
     return render(request, template, context)
 
 
-class inbox(generic.ListView):
+class inbox(LoginRequiredMixin, generic.ListView):
     """
     docstring
     """

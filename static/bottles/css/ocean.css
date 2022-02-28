@@ -8,16 +8,58 @@
 }
 
 .hidden {
+
     display: none;
 }
 
-.bottle-wrapper > .basic-wrapper {
-    background: url("../img/paper.png") center;
-    background-size: 120%;
-    text-align: center;
+.letter-content {
+    background: url("../img/paper.png") no-repeat center;
+    background-size: 100% 90%;
+    width: 90%; max-width: 800px; height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+
+
     font-weight: 600;
-    font-size: large;
+    font-size: large; 
 }
+
+.letter-msg {
+    width: 90%; max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    padding: 2em;
+}
+
+.letter-btn {
+    padding: .5em 1em;
+    border-radius: 25px;
+}
+
+.letter-btns > a {
+    color: black;
+    font-weight: 300;
+}
+
+/* from w3 schools  */
+
+.letter-modal {
+  display: none; /* Hidden by default */
+  justify-content: center; align-items: center;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0; right: 0;
+  top: 0;
+  width: 100vw ; /* Full width */
+  height: 100% ; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
 
 .bottle {
     background: url('../img/nice_bottle.png') no-repeat center;
@@ -29,7 +71,19 @@
     animation-duration: 12s;
     opacity: 0;
     cursor: pointer;
-    color: red;
+}
+
+.letter-btn:hover {
+    color: black;
+    opacity: .8;
+}
+
+.throw-btn {
+    padding: .23em 1em;
+}
+
+.throw-btn:hover {
+    opacity: .8;
 }
 
 /* GROUP A  */
@@ -246,4 +300,15 @@
     .ocean {
         position: absolute;
     }
+}
+
+@media screen and (min-width:400px) {
+  .letter-msg {
+      font-size: 1rem;
+  }
+  .letter-content {
+      height: 70%;
+      padding: 1em;
+      background-size: 100% 100%;
+  }
 }

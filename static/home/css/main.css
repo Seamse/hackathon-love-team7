@@ -13,6 +13,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #ed778f !important;
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
 }
 
 
@@ -344,7 +346,11 @@ box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
     border-radius: 25px;
     background-color: #FFCCCC;
     margin: .5em 0;
+}
 
+#inbox-username {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 6rem;
 }
   
 
@@ -372,8 +378,6 @@ box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
     #signup {
         margin-top: 12em;
     }
-
-    .button.navbar
 }
 
 @media screen and (max-width: 350px) {

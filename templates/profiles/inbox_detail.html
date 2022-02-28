@@ -1,0 +1,35 @@
+{% extends 'home/base.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container">
+    <div class="row g-0 txt-color mt-3">
+        <h1 class="post-title">{{ letter.body }}</h1>
+        <p class="post-subtitle">{{ letter.author }} | {{ letter.created_on }}</p>
+    </div>
+    <div class="form-background">
+        <div class="basic-wrapper content-login-section mt-0">
+            <h3>Replies:</h3>
+            <div class="card-body">
+                {% for reply in replys %}
+                <div style="padding: 10px;">
+                    <p class="font-weight-bold">
+                        {{ reply.body }}
+                        <br>
+                        <span class="font-weight-normal">
+                            {{ reply.name }}
+                            {{ reply.created_on }}
+                            <a href="{% url 'contact' letter.slug %}" class="card-links mr-1" aria-label="contact user">DM</a>
+                        </span> 
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+  
+</div>
+{% endblock content %}
+
+
+

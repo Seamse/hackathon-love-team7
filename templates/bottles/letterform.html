@@ -2,23 +2,25 @@
 {% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
-
-<div class="container col-lg-8 col-md-10">
-    <h4 class="header-style header-title-color"> Add your message</h4>
-    <div class="post-color mb-2 pt-1 pb-1 rounded">
-        {% if user.is_authenticated %}
-            <div class="col-12">
-                <div class="form-group">
-                    <form method="POST" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        {% crispy form %}
-                    </form>
+<div class="form-background">
+    <div class="basic-wrapper content-login-section">
+        <h4> Create your bottle</h4>
+        <div class="mb-2 pt-1 pb-1 rounded">
+            {% if user.is_authenticated %}
+                <div class="col-12">
+                    <div class="form-group">
+                        <form method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {% crispy form %}
+                        </form>
+                    </div>
                 </div>
-            </div>
-        {% else %}
-            <h4>You are not logged in</h4>
-        {% endif %}
+            {% else %}
+                <h4>You are not logged in</h4>
+            {% endif %}
+        </div>
     </div>
 </div>
+
 
 {% endblock %}

@@ -126,7 +126,6 @@ def ContactView(request, slug):
             email, #users email
             [message_email], #person that wrote the replys email
         )
-        # messages.success(request, 'Email sent successfully')
     return render(request, 'bottles/contact.html',  {'slug': slug, 'email': email, 'replys': replys, 'username':username})
 
 @login_required
@@ -151,7 +150,7 @@ def AddLetter(request):
             letter.slug = slugify(request.POST["body"])
             letter.author = request.user
             letter.save()
-            return redirect(reverse("letter_list"))
+            return redirect(reverse("ocean"))
     context = {"form": form}
     return render(request, "bottles/letterform.html", context)
 

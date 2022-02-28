@@ -12,22 +12,22 @@
     </div>
 
     {% for letter in letter_with_unseen_reply %}
-    <a class="all thrown" href="{% url 'letter_detail' letter.slug %}">
+    <a class="all thrown" href="{% url 'inbox_detail' letter.slug %}">
         <div class="inbox-letter">Letter from {{letter.author}} | {{letter.created_on}} letter unseen reply</div>
     </a>
     {% endfor %}
     {% for letter in letter_with_seen_reply %}
-    <a class="all thrown" href="{% url 'letter_detail' letter.slug %}">
+    <a class="all thrown" href="{% url 'inbox_detail' letter.slug %}">
         <div class="inbox-letter">Letter from {{letter.author}} | {{letter.created_on}} letter seen reply</div>
     </a>
     {% endfor %}
     {% for reply in replys %}
-    <a class="all fished" href="{% url 'letter_detail' reply.letter.slug %}">
+    <a class="all fished" href="{% url 'inbox_detail' reply.letter.slug %}">
         <div class="inbox-letter">Letter from {{reply.letter.author}} | {{reply.letter.created_on}} a letter the user replied to</div>
     </a>
     {% endfor %}
     {% for letter in unreplied_letters %}
-    <a class="all unreply thrown"  href="{% url 'letter_detail' letter.slug %}">
+    <a class="all unreply thrown"  href="{% url 'inbox_detail' letter.slug %}">
         <div class="inbox-letter">Letter from {{letter.author}} | {{letter.created_on}} users unreplied letters</div>
     </a>
     {% endfor %}

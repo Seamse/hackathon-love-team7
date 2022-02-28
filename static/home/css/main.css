@@ -369,8 +369,12 @@ textarea.input-box.input-lg{
     font-size: 6rem;
     color: #42193d;
 }
-  
 
+    /* Bottle reply page */
+
+.txt-color{
+    color: #42193d;
+}
     /* Media Queries */
 
 @media screen and (max-width: 500px) {

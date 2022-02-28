@@ -5,7 +5,8 @@ from .forms import ProfileForm
 from django.views import generic
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-
+from django.views import generic, View
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 # Create your views here.
@@ -52,3 +53,30 @@ class inbox(LoginRequiredMixin, generic.ListView):
         context['replys'] = user_reply_list
         return context 
 
+class InboxDetail(LoginRequiredMixin, View):
+    """
+    A view to show 5 lastest letters ordered by created
+    Args:
+        ListView: class based view
+    Returns:
+        Render of home page with context
+    """
+    def get(self, request, slug):
+        """
+        doc string
+        """
+        queryset = Letter.objects
+        letter = get_object_or_404(queryset, slug=slug)
+        letter.has_unseen_reply = False
+        letter.save()
+        replys = letter.replys.order_by("-created_on")  # oldest first
+        return render(
+            request,
+            "profiles/inbox_detail.html",
+            {
+                "letter": letter,
+                "replys": replys,
+            
+
+            },
+        )

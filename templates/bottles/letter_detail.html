@@ -2,51 +2,24 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<h1>Landing Page detail</h1>
-
-{% if user.is_authenticated %}
-<div class="basic-wrapper">
-    <h2>Welcome to the site {{user.username}}</h2>
-</div>
-{% endif %}
 
 <div class="container">
-    <div class="row g-0">
-        <h1 class="post-title">{{ letter.body }}</h1>
-   
-        <p class="post-subtitle">{{ letter.author }} | {{ letter.created_on }}</p>
+    <div class="row g-0 txt-color mt-3">
+        <h1>{{ letter.body }}</h1>
+        <p>{{ letter.author }} | {{ letter.created_on }}</p>
     </div>
 
-
-<div class="row">
-    <div class="col-md-8 card mb-4  mt-3 ">
-        <h3>Replies:</h3>
-        <div class="card-body">
-            {% for reply in replys %}
-            <div style="padding: 10px;">
-                <p class="font-weight-bold">
-                    {{ reply.body }}
-                    <br>
-                    <span class=" text-muted font-weight-normal">
-                        {{ reply.name }}
-                        {{ reply.created_on }
-                        <a href="{% url 'contact' letter.slug %}" class="card-links mr-1" aria-label="contact user">DM</a>
-                    </span> 
-                </p>
-            </div>
-            {% endfor %}
+    {% if user.is_authenticated %}
+    <div class="form-background">
+        <div class="basic-wrapper content-login-section mt-0">
+            <h3>Leave a reply:</h3>
+            <p>Reply to bottle from: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ reply_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-info login-btn">Send</button>
+                </form>
         </div>
-    </div>
-</div>
-{% if user.is_authenticated %}
-    <div class="col-md-8 card mb-4  mt-3 ">
-        <h3>Leave a reply:</h3>
-        <p>Reply to letter from: {{ user.username }}</p>
-            <form method="post" style="margin-top: 1.3em;">
-                {{ reply_form | crispy }}
-                {% csrf_token %}
-                <button type="submit" class="btn btn-secondary btn-lg">Submit</button>
-            </form>
     </div>
 </div>
 {% endif %}

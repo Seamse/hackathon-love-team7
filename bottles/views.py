@@ -10,7 +10,6 @@ from .forms import ReplyForm
 import random
 from .forms import LetterForm
 
-
 class LetterList(LoginRequiredMixin, generic.ListView):
     """
     docstring

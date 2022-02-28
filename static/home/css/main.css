@@ -252,18 +252,34 @@ textarea.input-box.input-lg{
 /*-----------Login form----------*/
 
 .content-login-section{
-    background: #42193d;
     -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
+    box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
     padding: 10px 20px;
-    border: 1px solid #dddddd;
+    border: 1px solid #42193d;
     border-radius: 3px;
-    margin-top: 22px;
-    margin-bottom: 20px;
-    color: #c31aad;
+    margin-top: 20vh;
+    color: #42193d;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
 
-  
+.login-btn {
+    -webkit-box-shadow: 2px 2px 2px 0px #000000, inset 1px 1px 12px 0px #000000, 2px 2px 12px 2px rgba(0,0,0,0); 
+    box-shadow:  2px 2px 2px 0px #69086c, inset 1px 1px 12px 0px  rgb(0 0 0 / 0%);
+    border-color: #42193d !important;
+    color: #42193d !important;
+    font-weight: 600 !important;
+}
+
+.login-btn:hover {
+    background-color: #FFCCCC !important;
+}
+
+.form-background {
+    height: 65vh;
+    width: auto;
+}
 
 
 /*----------Profile Sytle-----------*/
@@ -351,6 +367,7 @@ box-shadow:  5px 5px 5px 0px #69086c, inset 4px 4px 15px 0px  rgb(0 0 0 / 0%);
 #inbox-username {
     font-family: 'Lovers Quarrel', cursive;
     font-size: 6rem;
+    color: #42193d;
 }
   
 
